@@ -150,9 +150,15 @@ namespace TheSyndicate.Actions
             Console.Clear();
             if (DidPlayerSucceed())
             {
-                string successMessage = $"Phew, that was close! You successfully dodged {SuccessfullDodges} attack(s). You've still been caught but at least you live to see another day. Off to the reclamation center you go.";
+                string successMessage = $"Phew, that was close! You successfully dodged {SuccessfullDodges} attack(s).";
+                string successMessage2 = "You've still been caught but at least you live to see another day.";
+                string successMessage3 = "Off to the reclamation center you go.";
                 Console.SetCursorPosition(Console.WindowWidth/2 - successMessage.Length/2, Console.WindowHeight/2);
                 Console.WriteLine(successMessage);
+                Console.SetCursorPosition(Console.WindowWidth/2 - successMessage2.Length/2, (Console.WindowHeight/2) + 1);
+                Console.WriteLine(successMessage2);
+                Console.SetCursorPosition(Console.WindowWidth/2 - successMessage3.Length/2, (Console.WindowHeight/2) + 2);
+                Console.WriteLine(successMessage3);
             }
             else
             {
