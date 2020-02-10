@@ -22,7 +22,7 @@ namespace TheSyndicate
         }
 
         public void Start()
-        {
+		{
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
             {
                 PATH_TO_STORY = @"assets\story.json";
