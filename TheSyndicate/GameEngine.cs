@@ -22,16 +22,10 @@ namespace TheSyndicate
         }
 
         public void Start()
-        {           
+		{
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
             {
-                PATH_TO_STORY = @"assets\story.json"; //run
-                //PATH_TO_STORY = @"..\..\..\assets\story.json"; //debug
-            }
-            else
-            {
-                PATH_TO_STORY = @"assets/story.json"; //run
-                //PATH_TO_STORY = @"../../../assets/story.json"; //debug
+                PATH_TO_STORY = @"assets\story.json";
             }
             Console.ForegroundColor = ConsoleColor.Green;
             Console.CursorVisible = true;
