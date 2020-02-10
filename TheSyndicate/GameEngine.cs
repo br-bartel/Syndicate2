@@ -9,7 +9,7 @@ namespace TheSyndicate
 {
     class GameEngine
     {
-        private string PATH_TO_STORY = @"assets\story.json";
+        private string PATH_TO_STORY = @"assets/story.json";
         private Dictionary<string, Scene> Scenes { get; set; }
         private Scene CurrentScene { get; set; }
         private Player Player { get; set; }
@@ -22,8 +22,7 @@ namespace TheSyndicate
         }
 
         public void Start()
-        {
-            //ConsoleWindow.ShowWindow(ConsoleWindow.ThisConsole, ConsoleWindow.MAXIMIZE);
+        {           
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
             {
                 PATH_TO_STORY = @"assets\story.json"; //run
