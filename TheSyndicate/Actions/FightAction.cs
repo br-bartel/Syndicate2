@@ -40,7 +40,7 @@ namespace TheSyndicate.Actions
 
         private void RenderInstructions()
         {
-            TextBox instructions = new TextBox(INSTRUCTIONS, Console.WindowWidth / 3, 2, Console.WindowWidth / 3, Console.WindowHeight / 4);
+            TextBox instructions = new TextBox(INSTRUCTIONS, ConsoleWindow.Width / 3, 2, ConsoleWindow.Width / 3, ConsoleWindow.Height / 4);
             Console.Clear();
             instructions.SetBoxPosition(instructions.TextBoxX, instructions.TextBoxY);
             instructions.FormatText(INSTRUCTIONS);
@@ -49,7 +49,7 @@ namespace TheSyndicate.Actions
         private void WaitForPlayerToPressEnter()
         {
             string enterPrompt = "Press ENTER to continue.";
-            Console.SetCursorPosition(Console.WindowWidth / 2 - enterPrompt.Length / 2, Console.WindowHeight - (Console.WindowHeight / 5));
+            Console.SetCursorPosition(ConsoleWindow.Width / 2 - enterPrompt.Length / 2, ConsoleWindow.Height - (ConsoleWindow.Height / 5));
             Console.WriteLine(enterPrompt);
 
             ConsoleKey userInput = Console.ReadKey(true).Key;
@@ -66,7 +66,7 @@ namespace TheSyndicate.Actions
                 CurrentDodge = Dodge.NoDodge;
                 RenderFightOptions();
                 SetCurrentAttack();
-                Console.SetCursorPosition(Console.WindowWidth / 2 - 18, Console.WindowHeight / 2);
+                Console.SetCursorPosition(ConsoleWindow.Width / 2 - 18, ConsoleWindow.Height / 2);
                 Console.WriteLine($"Opponent's attack: {CurrentAttack}");
                 SetCurrentDodge();
                 if (UserSuccessfullyDodged())
@@ -79,7 +79,7 @@ namespace TheSyndicate.Actions
         private void RenderFightOptions()
         {
             string options = "Left Hook  --> Right Dodge (Right Arrow Key)\nRight Hook --> Left Dodge (Left Arrow Key)\nLaser Beam --> Duck (Down Arrow Key)";
-            TextBox instructions = new TextBox(options, Console.WindowWidth / 3, 2, Console.WindowWidth/2 - Console.WindowWidth / 6, Console.WindowHeight / 4);
+            TextBox instructions = new TextBox(options, ConsoleWindow.Width / 3, 2, ConsoleWindow.Width/2 - ConsoleWindow.Width / 6, ConsoleWindow.Height / 4);
             Console.Clear();
             instructions.SetBoxPosition(instructions.TextBoxX, instructions.TextBoxY);
             instructions.FormatText(options);
@@ -153,17 +153,17 @@ namespace TheSyndicate.Actions
                 string successMessage = $"Phew, that was close! You successfully dodged {SuccessfullDodges} attack(s).";
                 string successMessage2 = "You've still been caught but at least you live to see another day.";
                 string successMessage3 = "Off to the reclamation center you go.";
-                Console.SetCursorPosition(Console.WindowWidth/2 - successMessage.Length/2, Console.WindowHeight/2);
+                Console.SetCursorPosition(ConsoleWindow.Width/2 - successMessage.Length/2, ConsoleWindow.Height/2);
                 Console.WriteLine(successMessage);
-                Console.SetCursorPosition(Console.WindowWidth/2 - successMessage2.Length/2, (Console.WindowHeight/2) + 1);
+                Console.SetCursorPosition(ConsoleWindow.Width/2 - successMessage2.Length/2, (ConsoleWindow.Height/2) + 1);
                 Console.WriteLine(successMessage2);
-                Console.SetCursorPosition(Console.WindowWidth/2 - successMessage3.Length/2, (Console.WindowHeight/2) + 2);
+                Console.SetCursorPosition(ConsoleWindow.Width/2 - successMessage3.Length/2, (ConsoleWindow.Height/2) + 2);
                 Console.WriteLine(successMessage3);
             }
             else
             {
                 string failMessage = $"Darn, you were too slow. It was an honor to narrate you.";
-                Console.SetCursorPosition(Console.WindowWidth / 2 - failMessage.Length / 2, Console.WindowHeight / 2);
+                Console.SetCursorPosition(ConsoleWindow.Width / 2 - failMessage.Length / 2, ConsoleWindow.Height / 2);
                 Console.WriteLine(failMessage);
             }
             WaitForPlayerToPressEnter();

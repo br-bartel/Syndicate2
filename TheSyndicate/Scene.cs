@@ -40,8 +40,7 @@ namespace TheSyndicate
             ClearConsole();
 
             //TextBox is instantiated to pass this.Text and get access to TextBox Width and Height properties 
-
-            TextBox dialogBox = new TextBox(this.Text, Console.WindowWidth * 3 / 4, 2, (Console.WindowWidth - (Console.WindowWidth * 3 / 4)) / 2, 2) ;
+            TextBox dialogBox = new TextBox(this.Text, (int)((double)ConsoleWindow.Width * (8.0 / 10.0)), 2);
             dialogBox.FormatText(this.Text);
             dialogBox.DrawDialogBox(this.Text);
 
@@ -77,7 +76,7 @@ namespace TheSyndicate
                 Console.WriteLine($"{i + 1}: {this.Options[i]}");
                 sceneTextBox.TextBoxY += 2;
             }
-            sceneTextBox.SetBoxPosition(Console.WindowWidth - (Console.WindowWidth / 4), Console.WindowHeight - 2);
+            sceneTextBox.SetBoxPosition(ConsoleWindow.Width - (ConsoleWindow.Width / 4), ConsoleWindow.Height - 2);
             Console.WriteLine($"Press 0 at any point to save and quit.");
         }
 

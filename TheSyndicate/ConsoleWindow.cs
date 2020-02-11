@@ -3,19 +3,27 @@ using System.Runtime.InteropServices;
 
 namespace TheSyndicate
 {
-    class ConsoleWindow
+    public static class ConsoleWindow
     {
-        [DllImport("kernel32.dll", ExactSpelling = true)]
 
-        private static extern IntPtr GetConsoleWindow();
-        public static IntPtr ThisConsole = GetConsoleWindow();
+		public static int Width = 160;
+		public static int Height = 50;
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
+        [DllImport("libc")]
+        private static extern int system(string exec);
 
-        public static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
-        private const int HIDE = 0;
-        public const int MAXIMIZE = 3;
-        private const int MINIMIZE = 6;
-        private const int RESTORE = 9;
+        public static void SetConsoleSize()
+        {
+            if (Program.isWindows)
+            {
+                Console.SetWindowSize(1, 1);
+                Console.SetBufferSize(Width+2, Height+2);
+                Console.SetWindowSize(Width, Height);
+            }
+            else
+            {
+                system(@"printf '\e[8;" + Height + ";" + Width + "t'");
+            }
+        }
     }
 }
