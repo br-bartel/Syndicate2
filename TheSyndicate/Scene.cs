@@ -8,6 +8,7 @@ namespace TheSyndicate
         public static int SAVE_OPTION = 0;
         Player player = Player.GetInstance();
         public string Id { get; private set; }
+        public string Color;
         public string Text { get; private set; }
         public string[] Options { get; private set; }
         public string[] Destinations { get; private set; }
@@ -15,7 +16,7 @@ namespace TheSyndicate
         public bool Start { get; private set; }
         public IAction Action { get; set; }
 
-        public Scene(string id, string text, string[] options, string[] destinations, bool start)
+        public Scene(string id, string text, string[] options, string[] destinations, bool start, string color)
         {
             this.Id = id;
             this.Text = text;
@@ -23,6 +24,7 @@ namespace TheSyndicate
             this.Destinations = destinations;
             this.ActualDestinationId = null;
             this.Start = start;
+            this.Color = color;
         }
         
         public void Play()
@@ -38,6 +40,7 @@ namespace TheSyndicate
         TextBox RenderText()
         {
             ClearConsole();
+            Console.ForegroundColor = (ConsoleColor)Enum.Parse(typeof(ConsoleColor),this.Color);
 
             //TextBox is instantiated to pass this.Text and get access to TextBox Width and Height properties 
 
@@ -94,7 +97,7 @@ namespace TheSyndicate
             sceneTextBox.TextBoxY += 2;
             sceneTextBox.SetBoxPosition(sceneTextBox.TextBoxX, sceneTextBox.TextBoxY);
             Console.WriteLine("You have reached the end of your journey. Press CTRL + C to end.");
-            Console.ForegroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
         }
 
         private void ExecutePlayerOption(TextBox sceneTextBox)

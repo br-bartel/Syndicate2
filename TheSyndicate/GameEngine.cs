@@ -27,7 +27,7 @@ namespace TheSyndicate
             {
                 PATH_TO_STORY = @"assets\story.json";
             }
-            Console.ForegroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.CursorVisible = true;
             while (CurrentScene.HasNextScenes())
             {
