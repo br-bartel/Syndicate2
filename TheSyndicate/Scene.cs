@@ -113,11 +113,14 @@ namespace TheSyndicate
         private int GetValidUserInput(TextBox sceneTextBox)
         {
             int userInput;
-
             do
             {
                 sceneTextBox.SetBoxPosition(sceneTextBox.TextBoxX, sceneTextBox.TextBoxY + 2);
-                Int32.TryParse(Console.ReadLine(), out userInput);
+                
+                if (!Int32.TryParse(Console.ReadLine(), out userInput))
+                {
+                    userInput = -1;
+                }
             }
             while (!IsValidInput(userInput));
 
