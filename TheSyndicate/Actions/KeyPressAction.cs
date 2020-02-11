@@ -34,7 +34,7 @@ namespace TheSyndicate.Actions
         
         private void RenderInstructions()
         {
-            TextBox instructions = new TextBox(INSTRUCTIONS, Console.WindowWidth/2, 2, Console.WindowWidth / 4, Console.WindowHeight / 2);
+            TextBox instructions = new TextBox(INSTRUCTIONS, ConsoleWindow.Width/2, 2, ConsoleWindow.Width / 4, ConsoleWindow.Height / 2);
             Console.Clear();
             instructions.SetBoxPosition(instructions.TextBoxX, instructions.TextBoxY);
             instructions.FormatText(INSTRUCTIONS);
@@ -43,7 +43,7 @@ namespace TheSyndicate.Actions
         private void WaitForPlayerToPressEnter()
         {
             string enterPrompt = "Press ENTER to continue.";
-            Console.SetCursorPosition(Console.WindowWidth/2 - enterPrompt.Length/2, Console.WindowHeight - (Console.WindowHeight/4));
+            Console.SetCursorPosition(ConsoleWindow.Width/2 - enterPrompt.Length/2, ConsoleWindow.Height - (ConsoleWindow.Height/4));
             Console.WriteLine(enterPrompt);
             ConsoleKey userInput = Console.ReadKey(true).Key;
             while (userInput != ConsoleKey.Enter)
@@ -56,7 +56,7 @@ namespace TheSyndicate.Actions
         private void HaveUserAlternatePressingSpacebarAndTab()
         {
             Console.Clear();
-            Console.SetCursorPosition(Console.WindowWidth/2 - 4, Console.WindowHeight/2);
+            Console.SetCursorPosition(ConsoleWindow.Width/2 - 4, ConsoleWindow.Height/2);
             Console.WriteLine("START!!!");
             this.Stopwatch.Start();
             while (this.Stopwatch.Elapsed <= TimeSpan.FromSeconds(SECONDS_TO_PRESS_KEYS))
@@ -109,13 +109,13 @@ namespace TheSyndicate.Actions
             if (DidPlayerSucceed())
             {
                 string successMessage = $"Congratulations! You alternated pressing Tab and Spacebar {SpacebarAndTabPresses} time(s).";
-                Console.SetCursorPosition(Console.WindowWidth/2 - (successMessage.Length / 2), Console.WindowHeight / 2);
+                Console.SetCursorPosition(ConsoleWindow.Width/2 - (successMessage.Length / 2), ConsoleWindow.Height / 2);
                 Console.WriteLine(successMessage);
             }
             else
             {
                 string failMessage = "Darn, you were too slow. Looks like you're not going to make it.";
-                Console.SetCursorPosition(Console.WindowWidth/2 - (failMessage.Length / 2), Console.WindowHeight / 2);
+                Console.SetCursorPosition(ConsoleWindow.Width/2 - (failMessage.Length / 2), ConsoleWindow.Height / 2);
                 Console.WriteLine(failMessage);
             }
             WaitForPlayerToPressEnter();
