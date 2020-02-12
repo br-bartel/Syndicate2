@@ -146,10 +146,23 @@
         "You have stayed too long and encountered firmware to remove your code. Should you move to another location in the web?",
         "You don't have much time, but it is possible to download yourself to an open bot somewhere else. Is this the path you choose?"
     ],
-    "destinations": ["loveOneself", "city"],
+    "destinations": ["loveOneself", "future"],
     "actualDestinationId": null,
     "start": false,
     "color": "DarkBlue"
 
-    }
+	},
+	{
+	"id": "future",
+	"text": "You find yourself on a beach. There seems to be a large fleet of submarines out in the water. Just like one of your cards, 'You are the SUBject of my affection. '\n\nC.R.A.I.G. : The transfer must have worked! \n\nYou suddenly realize that the ground seems a lot closer than your old chassis. You look down, only to find a pair of flippers??! ",
+	"options": [
+		"You have stayed too long and encountered firmware to remove your code. Should you move to another location in the web?",
+		"You don't have much time, but it is possible to download yourself to an open bot somewhere else. Is this the path you choose?"
+	],
+	"destinations": ["loveOneself", "city"],
+	"actualDestinationId": null,
+	"start": false,
+	"color": "Gray"
+
+	}
 ]
