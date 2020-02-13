@@ -16,7 +16,7 @@
     "text": "You are now in the city. Once beautiful, now an industrial wasteland. Here there is no sentient life to speak of; only The Syndicate's Watchmen and what remains of a once bustling city. Your situation is dire and you are bound to be seen by one of the robotic Watchmen. You must flee...",
     "options": [
       "You see an exit out of the city. It looks risky but if you are able to pass, it may lead to your freedom. Should you take the chance.",
-      "There is a doorway not far from you. You are not sure where it leads, but you are hopeful. Should you go though it?"
+      "There is a doorway not far from you. You are not sure where it leads, but you are hopeful. Should you go through it?"
     ],
     "destinations": [ "fight", "toaster" ],
     "actualDestinationId": null,
@@ -37,7 +37,7 @@
   },
   {
     "id": "fight",
-    "text": "HALT. YOU ARE NOT AUTHORIZED TO ACCESS THIS LOCATION!!\n\nYou turn to find a relic of the war between The Syndicate and humans, a Watchman robot. But after The Syndicate had dismantled the humans' major organizational structures and weapons systems, Watchman robots were built to annihilate the few remaining humans who managed to survive the main phase of the war. Your sensors detect that the battle robot has iniated a target lock on you, and you can't help but to feel a litle giddy with excitement. Is this what being loved feels like?",
+    "text": "HALT. YOU ARE NOT AUTHORIZED TO ACCESS THIS LOCATION!!\n\nYou turn to find a relic of the war between The Syndicate and humans, a Watchman robot. But after The Syndicate had dismantled the humans' major organizational structures and weapons systems, Watchman robots were built to annihilate the few remaining humans who managed to survive the main phase of the war. Your sensors detect that the battle robot has initiated a target lock on you, and you can't help but to feel a litle giddy with excitement. Is this what being loved feels like?",
     "options": [
       "In your attempt to feel love, you reach out your arms, grip the Watchman robot in a long, warm hug, when suddenly, it's lights out. The Watchman robot strikes you as you embrace him and your're knocked unconscious.",
       "You decide to take a chance on love, and yell to the Watchman robot, 'I Love You!!' It does not phase it. He grabs you, incapacitates you with an electric shock and you lose consciousness. 'Target acquired.' As transport arrives, the Watchman robot hurls you into the truck just as you regain consciousness."
@@ -50,13 +50,14 @@
   },
   {
     "id": "forest",
-    "text": "You have somehow stumbled upon a forest, something you have never seen with you own eyes. You have only seen the images of what remained after the excavations for more wood to make letters. It's a rather beautiful sight; so much life, so much green. Far different yet you can still hear the buzzings of life. you see what appears to be decrepit structures in the distance. What do you hope to find here? you must decide.",
+    "text": "You have somehow stumbled upon a forest, something you have never seen with you own eyes. You have only seen the images of what remained after the excavations for more wood to make letters. It's a rather beautiful sight; so much life, so much green. Far different yet you can still hear the buzzings of life. You see what appears to be decrepit structures in the distance. What do you hope to find here? You must decide.",
     "options": [
       "Even though this forest is beautiful, it could prove dangerous. Should you find a way around it?",
+      "Climb a tree and look around first",
       "Travel deeper into the forest to search for what lies hidden.",
       "Inspect the structures in search of resources."
     ],
-    "destinations": [ "fight", "animal", "dead" ],
+    "destinations": [ "fight", "lake", "animal", "dead" ],
     "actualDestinationId": null,
     "start": false,
     "fColor": "White",
@@ -64,8 +65,34 @@
   },
 
   {
+    "id": "lake",
+    "text": "You've noticed something even more beautiful, not so far away, surrounded by trees and bushes which are mirrored in that... \\n\\nC.R.A.I.G. : A LAKE! You know that love is beautiful, so may be - you'll find it there! You rush down the tree and heading straight to the lake, can't wait to enjoy the beauty and may be, who knows, find what you were looking for... The closer you get the more you feel that air is getting thicker and soil has become slimy and pasty. It is really hard to move now, you're spending so much of your power, it is draining so fast. But you feel that it is really important to get there, even if it will cost you the last watt of power. Finally, you've approached the lake shore. BATTERY AT 10%, you hear squeaky sounds of all your bearings and mechanisms, you feel tingling sensation all over your body, you feel that you're loosing it, you see the portal... You're scared, you don't have much time left - head back and die on the way or take a leap of faith and jump straight in towards unknown, and then may be... You need to choose again.",
+    "options": [
+      "Rush back and try to save yourself for future endeavors",
+      "Jump right in and embrace it!"
+    ],
+    "destinations": [ "forest", "OTHER UNIVERSE" ],
+    "actualDestinationId": null,
+    "start": false,
+    "fColor": "DarkGray",
+    "bColor": "Cyan"
+  },
+
+  {
+    "id": "OTHER UNIVERSE",
+    "text": "1. Humans and robots exchange places conceptually. 2. The alternate reality where there are any robots and they are all equal. first microchip was sent to earth way before humanity was born. Humans blocked all \"unneeded\" features and functions to better rule and use robots for their needs...",
+    "options": [],
+    "destinations": [],
+    "actualDestinationId": null,
+    "start": false,
+    "fColor": "Magenta",
+    "bColor": "Cyan"
+
+  },
+
+  {
     "id": "hallway",
-    "text": "As you head down the hallway, you begin to feel panicked again. You begin to pass other AI. They appear to notice your panicked state. One particular robot stops and asks you if there is anything wrong.\n\nC.R.A.I.G. : I'm experiencing a malfunction...I am going to get myself...analyzed...yeah...\n\nIt's not convincing but the robot waves you on and continues about their business. You decide you can't stay around any longer. You are unable to control your new feelings and if it continues, you'll most certainly get caught and end up at the reclamation center. Most likely in pieces. As you continue down the hallway, you see an emergency exit.\n\nC.R.A.I.G. : This will definitely get me outside, but will sound alarms and draw extra unnecessary attention. But I don't know how much longer I can go unnoticed in the facility either.\n\nUnsure of what you should do, you feel there are only two choices at this point - roam the halls looking for an actual exit and risk not finding it in time or chance using the emergency exit, setting off alarms, and drawing extra attention, but also confusion that could let you slip away.",
+    "text": "As you head down the hallway, you begin to feel panicked again. You begin to pass other AI. They appear to notice your panicked state. One particular robot stops and asks you if there is anything wrong.\n\nC.R.A.I.G. : I'm experiencing a malfunction...I am going to get myself...analyzed...yeah...\n\nIt's not convincing, but the robot waves you on and continues about their business. You decide you can't stay around any longer. You are unable to control your new feelings and if it continues, you'll most certainly get caught and end up at the reclamation center. Most likely in pieces. As you continue down the hallway, you see an emergency exit.\n\nC.R.A.I.G. : This will definitely get me outside, but will sound alarms and draw extra unnecessary attention. But I don't know how much longer I can go unnoticed in the facility either.\n\nUnsure of what you should do, you feel there are only two choices at this point - roam the halls looking for an actual exit and risk not finding it in time or chance using the emergency exit, setting off alarms, and drawing extra attention, but also confusion that could let you slip away.",
     "options": [
       "Take the emergency exit.",
       "Leave through the delivery bay."
