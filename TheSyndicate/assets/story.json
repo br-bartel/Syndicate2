@@ -154,7 +154,7 @@
         "You have stayed too long and encountered firmware to remove your code. Should you move to another location in the web?",
         "You don't have much time, but it is possible to download yourself to an open bot somewhere else. Is this the path you choose?"
     ],
-    "destinations": [ "loveOneself", "city" ],
+    "destinations": ["loveOneself", "future"],
     "actualDestinationId": null,
     "start": false,
     "fColor": "DarkBlue",
@@ -171,7 +171,8 @@
     "destinations": [ "pastArrival", "city", "dead" ],
     "actualDestinationId": null,
     "start": false,
-    "color": "Green"
+    "fColor": "Green",
+    "bColor": "Black"
   },
   {
     "id": "pastArrival",
@@ -183,7 +184,8 @@
     "destinations": [ "noBody", "body" ],
     "actualDestinationId": null,
     "start": false,
-    "color": "Red"
+    "fColor": "Red",
+    "bColor": "Black"
   },
   {
     "id": "noBody",
@@ -194,7 +196,8 @@
     "destinations": [],
     "actualDestinationId": null,
     "start": false,
-    "color": "Green"
+    "fColor": "White",
+    "bColor": "Green"
   },
   {
     "id": "body",
@@ -205,7 +208,22 @@
     "destinations": [],
     "actualDestinationId": null,
     "start": false,
-    "color": "Cyan"
-  }
+    "fColor": "White",
+    "bColor": "Green"
+  },
+  {
+	"id": "future",
+	"text": "You find yourself on a beach. There seems to be a large fleet of submarines out in the water; Just like one of your cards, 'You are the SUBject of my affection.'\n\nC.R.A.I.G. : The transfer must have worked! \n\nYou suddenly realize that the ground seems a lot closer than in your old chassis. You look down, only to find a pair of flippers??! You turn around, away from the water, and see that there is a boardwalk with many small people? creatures? milling about.",
+	"options": [
+		"Investigate the submarines? After all, you never saw them in person before.",
+		"Head to the boardwalk. It's strange to see this many 'people' in one place."
+	],
+	"destinations": ["submarine", "boardwalk"],
+	"actualDestinationId": null,
+	"start": false,
+	"fColor": "Yellow",
+	"bColor": "DarkGray"
+
+	}
 ]
 
