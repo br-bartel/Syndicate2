@@ -34,6 +34,7 @@ namespace TheSyndicate
                 PlayScene();
             }
             PlayFinalScene();
+        
         }
 
         private void LoadScenes()
