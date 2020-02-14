@@ -309,15 +309,9 @@
 	},
 	{
 		"id": "friendlove",
-		"text": "",
-		"options": [
-			"",
-			""
-		],
-		"destinations": [
-			"",
-			""
-		],
+		"text": "Madoc Brown : Thats quite forthright of you... You seem like kind enough folk though. Tell you what, you stick with me here on The Gem, and I see us becoming fast friends. The thought of an adventure, a friend, fills you with a warmth you have trouble explaining. After a short diagnostic scan you realize your temperature is nominal. Are you imagining? Is this hope? Love? Happiness...",
+		"options": [],
+		"destinations": [],
 		"actualDestinationId": null,
 		"start": false,
 		"fColor": "Yellow",
@@ -325,15 +319,9 @@
 	},
 	{
 		"id": "futurelove",
-		"text": "",
-		"options": [
-			"",
-			""
-		],
-		"destinations": [
-			"",
-			""
-		],
+		"text": "Doc Brown tells you to head toward the city to the south and you set off, thanking them for their help. After days of swimming and waddling, you reach the edge of a bustling metropolis. Your oil distribution unit increases its beats per minute, as you consider the love the city contains. You have a good feeling about this one.",
+		"options": [],
+		"destinations": [],
 		"actualDestinationId": null,
 		"start": false,
 		"fColor": "Yellow",
