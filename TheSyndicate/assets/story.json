@@ -263,7 +263,7 @@
 		"id": "submarine",
 		"text": "As you get closer to the water, you feel the urge to swim.\n\nC.R.A.I.G. : Curious. I would normally sink... Beginning diagnostic scan...\n...\n..\n.\nC.R.A.I.G. : Amphibious mechanical helper: Class- Penguin? That explains the flippers.\n\nYou continue into the water and make your way to the nearest sub. As you get near you realize it is in the shape of a swimming penguin.",
 		"options": [
-			"Knock on the closed hatch.",
+			"Knock.",
 			"Find a way in."
 		],
 		"destinations": [
@@ -277,7 +277,7 @@
 	},
 	{
 		"id": "knock",
-		"text": "Suprisingly enough, someone answers.\n\nMystery Voice : Come in. I could use a hand with this.\n\nThe hatch opens and you slowly swim inside, it closing behind you.\n\nMystery Voice : Hey there penguin. Can you give me a hand with this bolt? I'm Madoc Brown. You got a name?\n\nC.R.A.I.G. : I am C.R.A.I.G.\n\nYou help them tighten the bolt and wonder if this is friendship. You have read that friendship can be its own form of love, but are still unsure of where you are.",
+		"text": "Suprisingly enough, someone answers.\n\nMystery Voice : Come in. I could use a hand with this. I'll open up the main hatch.\n\nThe hatch opens and you slowly swim inside, it closing behind you.\n\nMystery Voice : Hey there penguin. Can you give me a hand with this bolt? I'm Madoc Brown. You got a name?\n\nC.R.A.I.G. : I am C.R.A.I.G.\n\nYou help them tighten the bolt and wonder if this is friendship. You have read that friendship can be its own form of love, but are still unsure of where you are.",
 		"options": [
 			"Ask about the Syndicate.",
 			"Tell them you love them."
@@ -322,6 +322,20 @@
 		"text": "Doc Brown tells you to head toward the city to the south and you set off, thanking them for their help. After days of swimming and waddling, you reach the edge of a bustling metropolis. Your oil distribution unit increases its beats per minute, as you consider the love the city contains. You have a good feeling about this one.",
 		"options": [],
 		"destinations": [],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "Yellow",
+		"bColor": "DarkGray"
+	},
+	{
+		"id": "otherway",
+		"text": "As you swim around, searching for a way in, the smooth surface of the sub seems to give no hints. You decide to swim back to shore. Maybe the boardwalk will be more interesting. ",
+		"options": [
+			"Swim and analyze power production."
+		],
+		"destinations": [
+			"boardwalk"
+		],
 		"actualDestinationId": null,
 		"start": false,
 		"fColor": "Yellow",
