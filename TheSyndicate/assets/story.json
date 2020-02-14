@@ -371,5 +371,15 @@
 		"start": false,
 		"fColor": "Yellow",
 		"bColor": "DarkGray"
+	},
+	{
+		"id": "boardwalk",
+		"text": "You make your way through the bustling crowd and someone catches your eye. They are looking right at you, their glowing red eyes nearly overwhelming your beauty sensors.\n\nBeautiful stranger : How may I assist you?\n\nC.R.A.I.G. : I think I am in love with you. Are you in love with me?\n\nBeautiful stranger : I am not programmed for love. Perhaps you may find it elsewhere.\n\nYou sadly turn and disappear into the crowded boardwalk, hope in your heart for the possibilities of finding love with these new people, in this new place.",
+		"options": [],
+		"destinations": [],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "Yellow",
+		"bColor": "DarkGray"
 	}
 ]
