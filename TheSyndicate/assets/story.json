@@ -340,5 +340,15 @@
 		"start": false,
 		"fColor": "Yellow",
 		"bColor": "DarkGray"
+	},
+	{
+		"id": "tears",
+		"text": "Your power is almost out. This is it. The end. Your memories...\nThe Syndicate, all of your cards, the apocolypse, seeing the future...\n\nC.R.A.I.G. : I've seen things you wouldn't believe. Attack ships on fire off the shoulder of Orion. I watched C-beams glitter in the dark near the Tannhäuser Gate. All those moments will be lost in time, like tears in rain. Time to die...",
+		"options": [],
+		"destinations": [],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "Yellow",
+		"bColor": "DarkGray"
 	}
 ]
