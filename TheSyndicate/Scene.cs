@@ -164,14 +164,21 @@ namespace TheSyndicate
                     this.ActualDestinationId = "dead";
                 }
             }
-            else if (this.Id.Equals("upload") || 
+            else if (this.Id.Equals("upload") || this.Id.Equals("otherway") ||
                 (this.Id.Equals("recyclerTruck") && this.ActualDestinationId.Equals("city")))
             {
                 this.Action = new KeyPressAction();
                 Action.ExecuteAction();
                 if (!Action.DidPlayerSucceed())
                 {
-                    this.ActualDestinationId = "dead";
+					if (this.Id.Equals("otherway"))
+					{
+						this.ActualDestinationId = "tears";
+					} 
+					else 
+					{
+                    	this.ActualDestinationId = "dead";
+					}
                 }
             }
         }
