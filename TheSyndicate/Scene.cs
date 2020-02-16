@@ -10,7 +10,7 @@ namespace TheSyndicate
         public string Id { get; private set; }
         public string ForegroundColor;
         public string BackgroundColor;
-        public string Text { get; private set; }
+        public string Text { get; set; }
         public string[] Options { get; private set; }
         public string[] Destinations { get; private set; }
         public string ActualDestinationId { get; private set; }
@@ -114,7 +114,7 @@ namespace TheSyndicate
                 player.SavePlayerData(this.Id);
                 Environment.Exit(0);
             }
-            else
+			else
             {
                 SetDestinationId(userInput);
             }
@@ -140,7 +140,7 @@ namespace TheSyndicate
         public bool IsValidInput(int userInput)
         {
             int numberOfOptions = this.Options.Length;
-            return userInput >= 0 && userInput <= numberOfOptions;
+            return userInput >= 0 && userInput <= numberOfOptions || userInput == 9;
         }
 
         void ClearConsole()
@@ -150,37 +150,44 @@ namespace TheSyndicate
 
         void SetDestinationId(int selectedOption)
         {
-            this.ActualDestinationId = this.Destinations[selectedOption - 1];
-            if (this.ActualDestinationId.Equals("fight"))
-            {
-                this.Action = new FightAction();
-                Action.ExecuteAction();
-                if (Action.DidPlayerSucceed())
-                {
-                    this.ActualDestinationId = "recyclerTruck";
-                }
-                else
-                {
-                    this.ActualDestinationId = "dead";
-                }
-            }
-            else if (this.Id.Equals("upload") || this.Id.Equals("otherway") ||
-                (this.Id.Equals("recyclerTruck") && this.ActualDestinationId.Equals("city")))
-            {
-                this.Action = new KeyPressAction();
-                Action.ExecuteAction();
-                if (!Action.DidPlayerSucceed())
-                {
-					if (this.Id.Equals("otherway"))
+			if (selectedOption == 9)
+			{
+				this.ActualDestinationId = "achievements";
+			}
+			else
+			{
+				this.ActualDestinationId = this.Destinations[selectedOption - 1];
+				if (this.ActualDestinationId.Equals("fight"))
+				{
+					this.Action = new FightAction();
+					Action.ExecuteAction();
+					if (Action.DidPlayerSucceed())
 					{
-						this.ActualDestinationId = "tears";
-					} 
-					else 
-					{
-                    	this.ActualDestinationId = "dead";
+						this.ActualDestinationId = "recyclerTruck";
 					}
-                }
-            }
+					else
+					{
+						this.ActualDestinationId = "dead";
+					}
+				}
+				else if (this.Id.Equals("upload") || this.Id.Equals("otherway") ||
+					(this.Id.Equals("recyclerTruck") && this.ActualDestinationId.Equals("city")))
+				{
+					this.Action = new KeyPressAction();
+					Action.ExecuteAction();
+					if (!Action.DidPlayerSucceed())
+					{
+						if (this.Id.Equals("otherway"))
+						{
+							this.ActualDestinationId = "tears";
+						} 
+						else 
+						{
+							this.ActualDestinationId = "dead";
+						}
+					}
+				}
+			}
         }
         
         public bool HasNextScenes()

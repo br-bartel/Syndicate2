@@ -381,5 +381,21 @@
 		"start": false,
 		"fColor": "Yellow",
 		"bColor": "DarkGray"
+	},
+	{
+		"id": "achievements",
+		"text": "",
+		"options": [
+			"return to game",
+			"reset achievements"
+		],
+		"destinations": [
+			"return",
+			"reset"
+		],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "Yellow",
+		"bColor": "DarkGray"
 	}
 ]
