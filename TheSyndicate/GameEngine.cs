@@ -131,7 +131,6 @@ namespace TheSyndicate
 				else 
 				{
 					ResetAchievements();
-					UpdateAchievements();
 					return this.Scenes["achievements"];
 				}
 			}
@@ -150,18 +149,20 @@ namespace TheSyndicate
             string firstSceneId = GetFirstScene().Id;
             Player.ResetPlayerData(firstSceneId);
             CurrentScene.Play();
+			UpdateAchievements(CurrentScene.Id, true);
         }
 		private string LoadAchievements()
 		{
-			List<Achievement> temp = JsonConvert.DeserializeObject<List<Achievement>>(File.ReadAllText(PATH_TO_Achievements));
+			List<Achievement> temp = JsonConvert.DeserializeObject<List<Achievement>>
+													(File.ReadAllText(PATH_TO_Achievements));
 			Achievements = new Dictionary<string, Achievement>();
-            string text = "";
+            string text = "ACHIEVEMENTS:\n======================================\n\n";
             foreach(Achievement ach in temp)
             {
                 Achievements[ach.Id] = ach;
                 if (ach.State)
                 {
-                    text += ach.Id + "\n\n";
+                    text += ach.Completed + " : " + ach.Hint + "\n\n";
                 }
                 else
                 {
@@ -171,14 +172,21 @@ namespace TheSyndicate
 
 			return text;
 		}
-		private void UpdateAchievements()
+		private void UpdateAchievements(string key, bool value)
 		{
-
+			Achievements[key].State = value;
+			File.WriteAllText(PATH_TO_Achievements, JsonConvert.SerializeObject(Achievements.Values));
+			Scenes["achievements"].Text = LoadAchievements();
 		}
 
 		private void ResetAchievements()
 		{
-
+			foreach (Achievement ach in Achievements.Values)
+			{
+				ach.State = false;
+			}
+			File.WriteAllText(PATH_TO_Achievements, JsonConvert.SerializeObject(Achievements.Values));
+			Scenes["achievements"].Text = LoadAchievements();
 		}	
     }
 }

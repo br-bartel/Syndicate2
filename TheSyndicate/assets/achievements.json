@@ -1,27 +1,68 @@
 [
 	{
-		"id": "t1",
+		"id": "animal",
 		"state": "false",
-		"hint": ""
+		"completed": "Robot's best friend",
+		"hint": "Find a furry companion"
 	},
 	{
-		"id": "t2",
-		"state": "false",
-		"hint": ""
+		"id": "dead",
+		"state": "true",
+		"completed": "Better luck next time",
+		"hint": "Fail in your quest"
 	},
 	{
-		"id": "",
+		"id": "OTHER UNIVERSE",
 		"state": "false",
-		"hint": ""
+		"completed": "Through the rabbit hole",
+		"hint": "Go through the hidden portal"
 	},
 	{
-		"id": "",
+		"id": "loveOneself",
 		"state": "false",
-		"hint": ""
+		"completed": "The power inside",
+		"hint": "Learn to love yourself"
 	},
 	{
-		"id": "",
+		"id": "toaster",
 		"state": "false",
-		"hint": ""
+		"completed": "Odd bedfellows",
+		"hint": "See what is behind door number two"
+	},
+	{
+		"id": "noBody",
+		"state": "false",
+		"completed": "Where is Sarah Connor?",
+		"hint": "Embrace your inner T800"
+	},
+	{
+		"id": "body",
+		"state": "false",
+		"completed": "",
+		"hint": "n/a"
+	},
+	{
+		"id": "friendlove",
+		"state": "false",
+		"completed": "The friends we made along the way",
+		"hint": "Make a friend"
+	},
+	{
+		"id": "futurelove",
+		"state": "false",
+		"completed": "Stranger in a strange land",
+		"hint": "Seek love in another time, in another place"
+	},
+	{
+		"id": "tears",
+		"state": "false",
+		"completed": "Bladerunner finish",
+		"hint": "Die in the future"
+	},
+	{
+		"id": "boardwalk",
+		"state": "false",
+		"completed": "Chatbot love",
+		"hint": "Love another robot"
 	}
 ]

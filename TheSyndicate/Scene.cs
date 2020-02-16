@@ -67,7 +67,7 @@ namespace TheSyndicate
             }
             else
             {
-                RenderQuitMessage(sceneTextBox);
+				RenderQuitMessage(sceneTextBox);
             }
         }
 
@@ -85,8 +85,12 @@ namespace TheSyndicate
                 Console.WriteLine($"{i + 1}: {this.Options[i]}");
                 sceneTextBox.TextBoxY += 2;
             }
-            sceneTextBox.SetBoxPosition(ConsoleWindow.Width - (ConsoleWindow.Width / 4), ConsoleWindow.Height - 2);
-            Console.WriteLine($"Press 0 at any point to save and quit.");
+            sceneTextBox.SetBoxPosition(ConsoleWindow.Width - (ConsoleWindow.Width / 4), ConsoleWindow.Height - 4);
+            if (this.Id != "achievements")
+			{
+				Console.WriteLine($"Enter 0 to save and quit.");
+				Console.WriteLine($"Enter 9 to see achievements.");
+			}
         }
 
         private void RenderInstructions(TextBox sceneTextBox)
@@ -140,6 +144,11 @@ namespace TheSyndicate
         public bool IsValidInput(int userInput)
         {
             int numberOfOptions = this.Options.Length;
+			if (this.Id == "achievements")
+			{
+            	return userInput > 0 && userInput <= numberOfOptions;
+
+			}
             return userInput >= 0 && userInput <= numberOfOptions || userInput == 9;
         }
 
