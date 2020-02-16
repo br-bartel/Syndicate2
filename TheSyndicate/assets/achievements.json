@@ -7,7 +7,7 @@
 	},
 	{
 		"id": "dead",
-		"state": "true",
+		"state": "false",
 		"completed": "Better luck next time",
 		"hint": "Fail in your quest"
 	},
