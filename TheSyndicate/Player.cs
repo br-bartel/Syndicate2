@@ -8,7 +8,7 @@ namespace TheSyndicate
     {
         private static Player _instance;
         private const int MAXIMUM_BATTERY_POWER = 4;
-        private static string PATH_TO_SAVE_STATE = @"..\..\..\assets\SaveState.json";
+        private static string PATH_TO_SAVE_STATE = @"assets\SaveState.json";
         public string CurrentSceneId { get; private set; }
         public int BatteryPower { get; set; }
 

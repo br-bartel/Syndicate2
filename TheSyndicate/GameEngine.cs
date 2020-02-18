@@ -37,6 +37,7 @@ namespace TheSyndicate
                 PlayScene();
             }
             PlayFinalScene();
+			Console.ReadKey();
         
         }
 
@@ -175,7 +176,9 @@ namespace TheSyndicate
 		private void UpdateAchievements(string key, bool value)
 		{
 			Achievements[key].State = value;
-			File.WriteAllText(PATH_TO_Achievements, JsonConvert.SerializeObject(Achievements.Values));
+			string temp = JsonConvert.SerializeObject(Achievements.Values, Formatting.Indented);
+			File.WriteAllText(PATH_TO_Achievements, temp);
+								
 			Scenes["achievements"].Text = LoadAchievements();
 		}
 
@@ -185,7 +188,8 @@ namespace TheSyndicate
 			{
 				ach.State = false;
 			}
-			File.WriteAllText(PATH_TO_Achievements, JsonConvert.SerializeObject(Achievements.Values));
+			string temp = JsonConvert.SerializeObject(Achievements.Values, Formatting.Indented);
+			File.WriteAllText(PATH_TO_Achievements, temp);
 			Scenes["achievements"].Text = LoadAchievements();
 		}	
     }
