@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System;
 using System.IO;
 
 namespace TheSyndicate
@@ -32,7 +33,16 @@ namespace TheSyndicate
         {
             try
             {
-                return ConvertSaveStateToPlayer();
+                Console.WriteLine("Do you want to load your save?\n");
+                string userIn = Console.ReadLine().ToLower();
+                if (userIn == "y" || userIn == "yes")
+                {
+                    return ConvertSaveStateToPlayer();
+                }
+                else
+                {
+                    return new Player();
+                }
             }
             catch
             {

@@ -121,8 +121,8 @@
     "destinations": [ "forest", "dead", "city", "pastTravel" ],
     "actualDestinationId": null,
     "start": false,
-    "fColor": "Blue",
-    "bColor": "DarkGreen"
+    "fColor": "DarkBlue",
+    "bColor": "Green"
   },
   {
     "id": "toaster",
