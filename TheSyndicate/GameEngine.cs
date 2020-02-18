@@ -10,8 +10,11 @@ namespace TheSyndicate
     class GameEngine
     {
         private string PATH_TO_STORY = @"assets/story.json";
+        private string PATH_TO_Achievements = @"assets/achievements.json";
         private Dictionary<string, Scene> Scenes { get; set; }
+		public Dictionary<string, Achievement> Achievements;
         private Scene CurrentScene { get; set; }
+		public string PreviousSceneId;
         private Player Player { get; set; }
 
         public GameEngine()
@@ -23,7 +26,7 @@ namespace TheSyndicate
 
         public void Start()
 		{
-            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+            if (Program.isWindows)
             {
                 PATH_TO_STORY = @"assets\story.json";
             }
@@ -39,7 +42,8 @@ namespace TheSyndicate
 
         private void LoadScenes()
         {
-            Scenes = GetScenes();
+            Scenes = GetScenes();			
+			Scenes["achievements"].Text = LoadAchievements();
         }
 
         private Dictionary<string, Scene> GetScenes()
@@ -118,7 +122,26 @@ namespace TheSyndicate
 
         private Scene GetNextScene()
         {
-            return this.Scenes[CurrentScene.ActualDestinationId];
+			if (CurrentScene.Id == "achievements")
+			{
+				if (CurrentScene.ActualDestinationId == "return")
+				{
+					return this.Scenes[PreviousSceneId];
+				}
+				else 
+				{
+					ResetAchievements();
+					return this.Scenes["achievements"];
+				}
+			}
+			else
+			{
+				if (CurrentScene.ActualDestinationId == "achievements")
+				{
+					PreviousSceneId = CurrentScene.Id;
+				}
+            	return this.Scenes[CurrentScene.ActualDestinationId];
+			}
         }
 
         private void PlayFinalScene()
@@ -126,6 +149,44 @@ namespace TheSyndicate
             string firstSceneId = GetFirstScene().Id;
             Player.ResetPlayerData(firstSceneId);
             CurrentScene.Play();
+			UpdateAchievements(CurrentScene.Id, true);
         }
+		private string LoadAchievements()
+		{
+			List<Achievement> temp = JsonConvert.DeserializeObject<List<Achievement>>
+													(File.ReadAllText(PATH_TO_Achievements));
+			Achievements = new Dictionary<string, Achievement>();
+            string text = "ACHIEVEMENTS:\n======================================\n\n";
+            foreach(Achievement ach in temp)
+            {
+                Achievements[ach.Id] = ach;
+                if (ach.State)
+                {
+                    text += ach.Completed + " : " + ach.Hint + "\n\n";
+                }
+                else
+                {
+                    text += ach.Hint + "\n\n";
+                }
+            }
+
+			return text;
+		}
+		private void UpdateAchievements(string key, bool value)
+		{
+			Achievements[key].State = value;
+			File.WriteAllText(PATH_TO_Achievements, JsonConvert.SerializeObject(Achievements.Values));
+			Scenes["achievements"].Text = LoadAchievements();
+		}
+
+		private void ResetAchievements()
+		{
+			foreach (Achievement ach in Achievements.Values)
+			{
+				ach.State = false;
+			}
+			File.WriteAllText(PATH_TO_Achievements, JsonConvert.SerializeObject(Achievements.Values));
+			Scenes["achievements"].Text = LoadAchievements();
+		}	
     }
 }

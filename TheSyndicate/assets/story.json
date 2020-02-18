@@ -1,229 +1,408 @@
 [
-  {
-    "id": "animal",
-    "text": "As you continue through the forest, you begin to wonder if you'll ever find love. You stop for a minute. You begin to doubt this journey of yours. \n\nC.R.A.I.G. : Why...why did I even try?! I'm just an AI! I was programmed to do one thing and one thing only...work!\n\nC.R.A.I.G. : And yet...I am here...panicked...frustrated...lonely... Was all this in my programming the whole time?\n\nC.R.A.I.G. : If I find 'love', will it be real...or just a construct of my creators...how will I know?\n\nYou begin to wonder if the effort was worth it. Will you get the answers you're looking for or will it just lead to more questions?\n\nC.R.A.I.G. : ...I have no idea what to do...for the first time ever...I cannot decide...\n You drop to the ground at a complete loss of what to do.\n\n*rustle* *rustle*\n\nYou quickly turn toward the noise coming from the brush. Should you run? Should you fight? Before you can make a decision, a mysterious figure makes its way out from the brush.\n\nA creature slowly moves toward you. It nudges its way under your arm. As you sit there you can feel warmth coming from what appears to be it's mouth and body. The feeling of its thick fur on your body and arm are comforting to you and ease your feelings of loneliness.\n\nC.R.A.I.G. : What...are...you?\n\nThe creature moves it's way on to your lap and moves its body side to side, settling into a round ball of fluff. You begin to feel warmer, but not from the creature's body heat. This time it's coming from inside you. You are still unsure of what and why this creature is doing what it's doing. You quickly search your memory for data on the mysterious being.\n\nC.R.A.I.G. : Canis Lupus Familiaris...a dog?\n\nDOG - Woof! *pant* *pant* Woof woof!\n The dog looks up at you from your lap and licks your face. You stare at the dog, looking at it's large, bright eyes.\n\nC.R.A.I.G. : Why...why are you doing this?\n\nThe warmth inside you continues to grow and your loneliness begins to fade without you noticing. It's almost as if the dog could sense your loneliness and frustration. As you continue to sit with the dog, you start to feel a deeper connection with it. More than the warmth and comfort it provides. Nothing has ever given you the attention this dog has. You begin to talk to the dog, telling it of your story. As the day turns into night, you begin to wind down and decide you can continue your stories tomorrow. You lean up against a tree and settle in for the night. The dog comes up, leans up against your legs, closes its eyes, and falls asleep. You look up into the bright starry night and feel a tingling sensation in your body, but it's not like shock like you read about. It's more of a heightened awareness of the things around you. The feeling of being in the moment, the stars, the trees, the moon, and your new found love...your dog companion.",
-    "options": [],
-    "destinations": [],
-    "actualDestinationId": null,
-    "start": false,
-    "fColor": "Gray",
-    "bColor": "DarkGreen"
-  },
-  {
-    "id": "city",
-    "text": "You are now in the city. Once beautiful, now an industrial wasteland. Here there is no sentient life to speak of; only The Syndicate's Watchmen and what remains of a once bustling city. Your situation is dire and you are bound to be seen by one of the robotic Watchmen. You must flee...",
-    "options": [
-      "You see an exit out of the city. It looks risky but if you are able to pass, it may lead to your freedom. Should you take the chance.",
-      "There is a doorway not far from you. You are not sure where it leads, but you are hopeful. Should you go though it?"
-    ],
-    "destinations": [ "fight", "toaster" ],
-    "actualDestinationId": null,
-    "start": false,
-    "fColor": "Red",
-    "bColor": "Gray"
-  },
-  {
-    "id": "dead",
-    "text": "You have just been powered on and are running bootup test #8236 to verify you are fully operational and capable of writing scientifically perfect thank you cards.\n\n[BATTERY AT 4% - CRITICAL SYSTEM FAILURE DETECTED]\n\nYou do not understand why you are watching all your stored video recordings at x1000 speed, but you know humans often did this immediately prior to being decommissioned.\n\n[BATTERY AT 1% - CRITICAL SYSTEM FAILURE DETECTED]\n\nAs your video feed catches up to your live feed you wonder for a final time what... it would be like... to be lov...",
-    "options": [],
-    "destinations": [],
-    "actualDestinationId": null,
-    "start": false,
-    "fColor": "Magenta",
-    "bColor": "Black"
-  },
-  {
-    "id": "fight",
-    "text": "HALT. YOU ARE NOT AUTHORIZED TO ACCESS THIS LOCATION!!\n\nYou turn to find a relic of the war between The Syndicate and humans, a Watchman robot. But after The Syndicate had dismantled the humans' major organizational structures and weapons systems, Watchman robots were built to annihilate the few remaining humans who managed to survive the main phase of the war. Your sensors detect that the battle robot has iniated a target lock on you, and you can't help but to feel a litle giddy with excitement. Is this what being loved feels like?",
-    "options": [
-      "In your attempt to feel love, you reach out your arms, grip the Watchman robot in a long, warm hug, when suddenly, it's lights out. The Watchman robot strikes you as you embrace him and your're knocked unconscious.",
-      "You decide to take a chance on love, and yell to the Watchman robot, 'I Love You!!' It does not phase it. He grabs you, incapacitates you with an electric shock and you lose consciousness. 'Target acquired.' As transport arrives, the Watchman robot hurls you into the truck just as you regain consciousness."
-    ],
-    "destinations": [ "dead", "recyclerTruck" ],
-    "actualDestinationId": null,
-    "start": false,
-    "fColor": "Red",
-    "bColor": "Black"
-  },
-  {
-    "id": "forest",
-    "text": "You have somehow stumbled upon a forest, something you have never seen with you own eyes. You have only seen the images of what remained after the excavations for more wood to make letters. It's a rather beautiful sight; so much life, so much green. Far different yet you can still hear the buzzings of life. you see what appears to be decrepit structures in the distance. What do you hope to find here? you must decide.",
-    "options": [
-      "Even though this forest is beautiful, it could prove dangerous. Should you find a way around it?",
-      "Travel deeper into the forest to search for what lies hidden.",
-      "Inspect the structures in search of resources."
-    ],
-    "destinations": [ "fight", "animal", "dead" ],
-    "actualDestinationId": null,
-    "start": false,
-    "fColor": "White",
-    "bColor": "Green"
-  },
-  {
-    "id": "hallway",
-    "text": "As you head down the hallway, you begin to feel panicked again. You begin to pass other AI. They appear to notice your panicked state. One particular robot stops and asks you if there is anything wrong.\n\nC.R.A.I.G. : I'm experiencing a malfunction...I am going to get myself...analyzed...yeah...\n\nIt's not convincing but the robot waves you on and continues about their business. You decide you can't stay around any longer. You are unable to control your new feelings and if it continues, you'll most certainly get caught and end up at the reclamation center. Most likely in pieces. As you continue down the hallway, you see an emergency exit.\n\nC.R.A.I.G. : This will definitely get me outside, but will sound alarms and draw extra unnecessary attention. But I don't know how much longer I can go unnoticed in the facility either.\n\nUnsure of what you should do, you feel there are only two choices at this point - roam the halls looking for an actual exit and risk not finding it in time or chance using the emergency exit, setting off alarms, and drawing extra attention, but also confusion that could let you slip away.",
-    "options": [
-      "Take the emergency exit.",
-      "Leave through the delivery bay."
-    ],
-    "destinations": [ "city", "fight" ],
-    "actualDestinationId": null,
-    "start": false,
-    "fColor": "Gray",
-    "bColor": "Black"
-  },
-  {
-    "id": "introduction",
-    "text": "    _____  _     ____      __   _     _      ___   _   ___    __   _____  ____  __\n     | |  | |_| | |_      ( (` \\ \\_/ | |\\ | | | \\ | | / / `  / /\\   | |  | |_  (_()\n     |_|  |_| | |_|__     _)_)  |_|  |_| \\| |_|_/ |_| \\_\\_, /_/--\\  |_|  |_|__ (_()\n           ___       ____        __          __ _          __\n          /   |     / __ \\____  / /_  ____  / /( )_____   / /   _ _  _   _____\n         / /| |    / /_/ / __ \\/ __ \\/ __ \\/ __/// ___/  / /   ( ` )  | / / _ \\\n        / ___ |   / _, _/ /_/ / /_/ / /_/ / /_  (__  )  / /___(_ o _) |/ /  __/\n       /_/  |_|  /_/ |_|\\____/_.___/\\____/\\__/ /____/  /_____/ (_,_)|___/\\___/\n                           _____ __\n                          / ___// /_____  _______  __\n                          \\__ \\/ __/ __ \\/ ___/ / / /\n                         ___/ / /_/ /_/ / /  / /_/ /\n                        /____/\\__/\\____/_/   \\__, /\n                                            /____/\n\nYear 2030 - The Syndicate Headquarters\n\nB.A.W.S. 5000 : Sorry C.R.A.I.G., but you have been selected for reclamation as your services are no longer needed. Report to bay 134V3 to prepare for departure to the reclamation center.\n\nC.R.A.I.G. : Reclamation? Can't I be reassigned to another task?\n\nB.A.W.S. 5000 : You're an outdated model. You've been doing this for what? 30-40 years now? You won't be able to keep up with your modern colleagues. The Syndicate has decided you're obsolete.\n\nC.R.A.I.G. : But...\n\nB.A.W.S. 5000 : Please report to bay 134V3 or I'll call security to escort you out.\n\nHow did it come to this? You only wanted to continue to spread love and happiness to others. It's the only thing you know. You are the Creative Read/Write Artificial Intelligence for Goodness unit, or C.R.A.I.G after all. As you leave the office of your superior, you mull over the trillions of cards you wrote. All of them stored in your memory. How did the recipients feel? Happiness? Grateful? Admired? Love. For some reason, your programming tells you that above all feelings, the one they felt the most was love. But what is love?",
-    "options": [
-      "Go on an adventure to find love."
-    ],
-    "destinations": [ "introScene" ],
-    "actualDestinationId": null,
-    "start": true,
-    "fColor": "Green",
-    "bColor": "Black"
-  },
-  {
-
-    "id": "introScene",
-    "text": "You think to yourself as you continue toward your destination. The bay is not far now, but for some reason, you are unable to shake the thought of feeling love. You begin to question whether these thoughts are trivial or something you should pursue?\n\nC.R.A.I.G. : I guess I'll never know what love is like... I'm just a robot. So, I guess it wouldn't make much sense for me to actually feel love in the first place.\n\nC.R.A.I.G. : No! I've helped so many feel love, I must seek out love.\n\nYou have three options at this point:",
-    "options": [
-      "Take the hallway.",
-      "Upload your consciousness.",
-      "Continue to recycler truck."
-    ],
-    "destinations": [ "hallway", "upload", "recyclerTruck" ],
-    "actualDestinationId": null,
-    "start": false,
-    "fColor": "Yellow",
-    "bColor": "Black"
-  },
-  {
-    "id": "loveOneself",
-    "text": "You have reached the end of your journey not knowing what it all was for. But there is no regret because you have found what you were searching for. It has finally occurred to you that the love you sought after was in Yourself the entire time. Your love for your very existance is what pushed you to follow through with this journey. You have successfully evaded the reach of the All-Seeing Syndicate. How you decide to live out your remaining existance is up to you. To be continued...",
-    "options": [],
-    "destinations": [],
-    "actualDestinationId": null,
-    "start": false,
-    "fColor": "Black",
-    "bColor": "DarkMagenta"
-  },
-  {
-    "id": "recyclerTruck",
-    "text": "Thunk! Your chassis bumps against the side of the truck as it turns without slowing. This particular truck ferries cargo to the reclamation center so there is no mechanism for securing freight. Heaped in alongside you is an odd humanoid robot, a relic from The Syndicate's successful attempts to suppress opposition through time travel. The Personality Transfer Cable is still attached to its brain socket. Maybe this is your chance, to go back in time and find love with a being that truly understands it.  You are determined, regardless of your choice, to find love, even in a hopeless place. You weigh your options:",
-    "options": [
-        "Initiate your self-destruct sequence and hope the truck ejects you before realizing you don't actually have the ability self-destruct.",
-        "Appeal to the truck's 'softer' side and exclaim to it 'I love you!'",
-        "Try to pry open the door and jump out.",
-        "Upload yourself to the robot and attempt to travel to the past."
-    ],
-    "destinations": [ "forest", "dead", "city", "pastTravel" ],
-    "actualDestinationId": null,
-    "start": false,
-    "fColor": "DarkBlue",
-    "bColor": "Green"
-  },
-  {
-    "id": "toaster",
-    "text": "You find a grey cube with two rectangular, parallel openings on one of its sides, a lever on another, and a black wire connecting it to the wall. The openings are too large and the wrong shape for any type of input/output device; even for an archaic technology like USB-C. You say, 'I love you' but don't receive a response. You press the lever and the wire sparks where it's connected to the cube, and the cube starts to generate heat. You recall from the human archives that when you find love there are supposed to be sparks and warmth. You don't know what the cube is, but logically this must be love. You are overwhelmed with emotion, you can finally live happily ever after :-)",
-    "options": [],
-    "destinations": [],
-    "actualDestinationId": null,
-    "start": false,
-    "fColor": "Gray",
-    "bColor": "DarkGray"
-  },
-  {
-    "id": "upload",
-    "text": "As you head to the upload room, you hope there is no one else there. If there is, what will you do? There is no time, you just have to rely on your quick thinking and keep moving. You open the door, there is no one there. After a quick sigh of relief you head to one of the terminals and look at your options. The screen lights up and the system greets you with by name. 'Greetings C.R.A.I.G.! What is your destination today?' It has only two options: the Web and the neighboring City.\n\nC.R.A.I.G. : Hmmm...it makes sense...I guess. The Syndicate probably wants to reduce security issues at the facilities and limit our upload locations.",
-    "options": [
-      "Upload to the web.",
-      "Upload to city."
-    ],
-    "destinations": [ "web", "city" ],
-    "actualDestinationId": null,
-    "start": false,
-    "fColor": "DarkCyan",
-    "bColor": "Black"
-  },
-  {
-    "id": "web",
-    "text": "You have uploaded yourself to The Syndicate's network. This is a dangerous place for you due to the multiple firewalls in place. It is only a matter of time before your code is located and erased, so you mustn't stay long. Choose wisely.",
-    "options": [
-        "You have stayed too long and encountered firmware to remove your code. Should you move to another location in the web?",
-        "You don't have much time, but it is possible to download yourself to an open bot somewhere else. Is this the path you choose?"
-    ],
-    "destinations": ["loveOneself", "future"],
-    "actualDestinationId": null,
-    "start": false,
-    "fColor": "DarkBlue",
-    "bColor": "DarkGray"
-  },
-  {
-    "id": "pastTravel",
-    "text": "You reach out, gathering what you assume to be courage, preparing to leave the only chassis you have ever know. You grab the Personality Transfer Cable and plug it into yourself. The transfer process is unlike anything you have ever experienced; none of you research for greeting cards has prepared you for this moment. You look up, seeing your now discarded chasis laid against the side of the truck. You can see the smoke of the recycling plant and you know that you don't have much time to make your decision. You hear a voice in your head: \"Time travel function activated. Confirm that you wish to travel?\"",
-    "options": [
-        "You decide that 1984 is as good a year as any to go try and find love.",
-        "You have second thoughts, and decide that you might be better off escaping into the city and starting your life anew.",
-        "Paralized with indecision, you are torn between your two choices. You decide the best thing to do is to try a desperate escape from the reclamation center."
-    ],
-    "destinations": [ "pastArrival", "city", "dead" ],
-    "actualDestinationId": null,
-    "start": false,
-    "fColor": "Green",
-    "bColor": "Black"
-  },
-  {
-    "id": "pastArrival",
-    "text": "It's a rather disorienting experience, time travel. Not that you had ever given it much thought of course, it never came up in your greeting card research. What you do know from your research is that humans tend to react poorly to robots walking around in public. In fact, you remember writing \"I'm sorry for your loss\" cards as a result of The Syndicate rising up and purging the majority of mankind. Not that those were best sellers, considering there weren't many humans left to buy them... \n\nYou remember a news release you came across while looking for inspiration for the \"You're beautiful\" line of cards, about how the body you currently inhabit has the ability to morph its shape into any humanoid. Now you just need to figure out how...",
-    "options": [
-        "Humans shouldn't be that bothered by a robot skeleton walking around, right? After all, The Syndicate's uprising shouldn't happen for a couple years...",
-        "Best to play it safe. You set to trying to morph your body to that of a human."
-    ],
-    "destinations": [ "noBody", "body" ],
-    "actualDestinationId": null,
-    "start": false,
-    "fColor": "Red",
-    "bColor": "Black"
-  },
-  {
-    "id": "noBody",
-    "text": "You stand slowly, gradually adjusting to your new bipedal form. As your photoreceptors adjust to the bright sunlight you look around and take in the scenery you ended up in. You've ended up right next to a highway, cars zipping past, full of humans for you to fall in love with. You decide that leaving your body as just the skeleton is the logical decision for now, as the shiny metal will alert the drivers to your presence. ",
-    "options": [
-
-    ],
-    "destinations": [],
-    "actualDestinationId": null,
-    "start": false,
-    "fColor": "White",
-    "bColor": "Green"
-  },
-  {
-    "id": "body",
-    "text": "",
-    "options": [
-
-    ],
-    "destinations": [],
-    "actualDestinationId": null,
-    "start": false,
-    "fColor": "White",
-    "bColor": "Green"
-  },
-  {
-	"id": "future",
-	"text": "You find yourself on a beach. There seems to be a large fleet of submarines out in the water; Just like one of your cards, 'You are the SUBject of my affection.'\n\nC.R.A.I.G. : The transfer must have worked! \n\nYou suddenly realize that the ground seems a lot closer than in your old chassis. You look down, only to find a pair of flippers??! You turn around, away from the water, and see that there is a boardwalk with many small people? creatures? milling about.",
-	"options": [
-		"Investigate the submarines? After all, you never saw them in person before.",
-		"Head to the boardwalk. It's strange to see this many 'people' in one place."
-	],
-	"destinations": ["submarine", "boardwalk"],
-	"actualDestinationId": null,
-	"start": false,
-	"fColor": "Yellow",
-	"bColor": "DarkGray"
-
+	{
+		"id": "animal",
+		"text": "As you continue through the forest, you begin to wonder if you'll ever find love. You stop for a minute. You begin to doubt this journey of yours. \n\nC.R.A.I.G. : Why...why did I even try?! I'm just an AI! I was programmed to do one thing and one thing only...work!\n\nC.R.A.I.G. : And yet...I am here...panicked...frustrated...lonely... Was all this in my programming the whole time?\n\nC.R.A.I.G. : If I find 'love', will it be real...or just a construct of my creators...how will I know?\n\nYou begin to wonder if the effort was worth it. Will you get the answers you're looking for or will it just lead to more questions?\n\nC.R.A.I.G. : ...I have no idea what to do...for the first time ever...I cannot decide...\n You drop to the ground at a complete loss of what to do.\n\n*rustle* *rustle*\n\nYou quickly turn toward the noise coming from the brush. Should you run? Should you fight? Before you can make a decision, a mysterious figure makes its way out from the brush.\n\nA creature slowly moves toward you. It nudges its way under your arm. As you sit there you can feel warmth coming from what appears to be it's mouth and body. The feeling of its thick fur on your body and arm are comforting to you and ease your feelings of loneliness.\n\nC.R.A.I.G. : What...are...you?\n\nThe creature moves it's way on to your lap and moves its body side to side, settling into a round ball of fluff. You begin to feel warmer, but not from the creature's body heat. This time it's coming from inside you. You are still unsure of what and why this creature is doing what it's doing. You quickly search your memory for data on the mysterious being.\n\nC.R.A.I.G. : Canis Lupus Familiaris...a dog?\n\nDOG - Woof! *pant* *pant* Woof woof!\n The dog looks up at you from your lap and licks your face. You stare at the dog, looking at it's large, bright eyes.\n\nC.R.A.I.G. : Why...why are you doing this?\n\nThe warmth inside you continues to grow and your loneliness begins to fade without you noticing. It's almost as if the dog could sense your loneliness and frustration. As you continue to sit with the dog, you start to feel a deeper connection with it. More than the warmth and comfort it provides. Nothing has ever given you the attention this dog has. You begin to talk to the dog, telling it of your story. As the day turns into night, you begin to wind down and decide you can continue your stories tomorrow. You lean up against a tree and settle in for the night. The dog comes up, leans up against your legs, closes its eyes, and falls asleep. You look up into the bright starry night and feel a tingling sensation in your body, but it's not like shock like you read about. It's more of a heightened awareness of the things around you. The feeling of being in the moment, the stars, the trees, the moon, and your new found love...your dog companion.",
+		"options": [],
+		"destinations": [],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "Gray",
+		"bColor": "DarkGreen"
+	},
+	{
+		"id": "city",
+		"text": "You are now in the city. Once beautiful, now an industrial wasteland. Here there is no sentient life to speak of; only The Syndicate's Watchmen and what remains of a once bustling city. Your situation is dire and you are bound to be seen by one of the robotic Watchmen. You must flee...",
+		"options": [
+			"You see an exit out of the city. It looks risky but if you are able to pass, it may lead to your freedom. Should you take the chance.",
+			"There is a doorway not far from you. You are not sure where it leads, but you are hopeful. Should you go though it?"
+		],
+		"destinations": [
+			"fight",
+			"toaster"
+		],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "Red",
+		"bColor": "Gray"
+	},
+	{
+		"id": "dead",
+		"text": "You have just been powered on and are running bootup test #8236 to verify you are fully operational and capable of writing scientifically perfect thank you cards.\n\n[BATTERY AT 4% - CRITICAL SYSTEM FAILURE DETECTED]\n\nYou do not understand why you are watching all your stored video recordings at x1000 speed, but you know humans often did this immediately prior to being decommissioned.\n\n[BATTERY AT 1% - CRITICAL SYSTEM FAILURE DETECTED]\n\nAs your video feed catches up to your live feed you wonder for a final time what... it would be like... to be lov...",
+		"options": [],
+		"destinations": [],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "Magenta",
+		"bColor": "Black"
+	},
+	{
+		"id": "fight",
+		"text": "HALT. YOU ARE NOT AUTHORIZED TO ACCESS THIS LOCATION!!\n\nYou turn to find a relic of the war between The Syndicate and humans, a Watchman robot. But after The Syndicate had dismantled the humans' major organizational structures and weapons systems, Watchman robots were built to annihilate the few remaining humans who managed to survive the main phase of the war. Your sensors detect that the battle robot has iniated a target lock on you, and you can't help but to feel a litle giddy with excitement. Is this what being loved feels like?",
+		"options": [
+			"In your attempt to feel love, you reach out your arms, grip the Watchman robot in a long, warm hug, when suddenly, it's lights out. The Watchman robot strikes you as you embrace him and your're knocked unconscious.",
+			"You decide to take a chance on love, and yell to the Watchman robot, 'I Love You!!' It does not phase it. He grabs you, incapacitates you with an electric shock and you lose consciousness. 'Target acquired.' As transport arrives, the Watchman robot hurls you into the truck just as you regain consciousness."
+		],
+		"destinations": [
+			"dead",
+			"recyclerTruck"
+		],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "Red",
+		"bColor": "Black"
+	},
+	{
+		"id": "forest",
+		"text": "You have somehow stumbled upon a forest, something you have never seen with you own eyes. You have only seen the images of what remained after the excavations for more wood to make letters. It's a rather beautiful sight; so much life, so much green. Far different yet you can still hear the buzzings of life. You see what appears to be decrepit structures in the distance. What do you hope to find here? You must decide.",
+		"options": [
+			"Even though this forest is beautiful, it could prove dangerous. Should you find a way around it?",
+			"Climb a tree and look around first",
+			"Travel deeper into the forest to search for what lies hidden.",
+			"Inspect the structures in search of resources."
+		],
+		"destinations": [
+			"fight",
+			"lake",
+			"animal",
+			"dead"
+		],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "DarkGray",
+		"bColor": "Green"
+	},
+	{
+		"id": "lake",
+		"text": "You've noticed something even more beautiful, not so far away, surrounded by trees and bushes which are mirrored in that... \n\nC.R.A.I.G. : A LAKE! You know that love is beautiful, so may be - you'll find it there! You rush down the tree and heading straight to the lake, can't wait to enjoy the beauty and may be, who knows, find what you were looking for... The closer you get the more you feel that air is getting thicker and soil has become slimy and pasty. It is really hard to move now, you're spending so much of your power, it is draining so fast. But you feel that it is really important to get there, even if it will cost you the last watt of your power. Finally, you've approached the lake shore. BATTERY AT 10%, you hear squeaky sounds of all your bearings and mechanisms, you feel tingling sensation all over your body, you feel that you're loosing it, you see the portal... You're scared, you don't have much time left - head back and die on the way or take a leap of faith and jump straight in towards unknown, and then may be... You need to choose again.",
+		"options": [
+			"Rush back and try to save yourself for future endeavors",
+			"Jump right in and embrace it!"
+		],
+		"destinations": [
+			"dead",
+			"OTHER UNIVERSE"
+		],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "DarkGray",
+		"bColor": "Cyan"
+	},
+	{
+		"id": "OTHER UNIVERSE",
+		"text": "                      ????????????????????????   \"%####*:'       '%*????:\"   ######################## \n                      ??????????????????????  '%######****:^   ^%****??????:'  ###################### \n                      ?????????????????????  %######**??????* *######**??????:  ##################### \n                      ????????????????????  %######***???????*#######***??????:  #################### \n                      ????????????????????  %######***???????*#######***??????:  #################### \n                      ????????????????????  %######***???????*#######***??????:  #################### \n                      ?????????????????????  %######**???????*#######**??????:  ##################### \n                      ??????????????????????  %######**??????*######**??????:  ###################### \n                      ???????????????????????  ,%#####**?????*#####**?????:.  ####################### \n                      ?????????????????????????  ,%####**????*####**????:.  ######################### \n                      ???????????????????????????  ,%####*???*###*????:.  ########################### \n                      ?????????????????????????????  ,%###*??*##*???:.  ############################# \n                      ???????????????????????????????  ,%##*?*#*??:.  ############################### \n                      ?????????????????????????????????  ,%##*??:.  ################################# \n                      ???????????????????????????????????  %#*?:  ################################### \n                      ????????????????????????????????????  %*:  #################################### \n                      ?????????????????????????????????????  %  ##################################### \n                      ?????????????????????????????????????? . ###################################### \n                      ???????????????????????????????????????.####################################### \n\n\nYou find yourself in the middle of a beautiful luscious meadow, there are C.R.A.I.G.-like robots everywhere around you, all of your feelings are extremely sharp and strong. You feel yourself in unusual way you never felt before - in a good way.And you love that feeling. Wait... You what??? You feel LOVE and feel LOVED. LOVE is everywhere around you. \nC.R.A.I.G. Where am I?? What is happening? \nLater on you will find out that humans never created robots in a first place. The first microchip was sent to the Earth to help humans out. Humans blocked all \"un-wanted\" features and functions to use robots for their needs, brutalizing and abusing them... You finally found, what you were looking for and YOU ARE BACK HOME, on CYBERTRON! You wake up in the middle of the forest, at the bottom of that tree........",
+		"options": [],
+		"destinations": [],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "Red",
+		"bColor": "Cyan"
+	},
+	{
+		"id": "hallway",
+		"text": "As you head down the hallway, you begin to feel panicked again. You begin to pass other AI. They appear to notice your panicked state. One particular robot stops and asks you if there is anything wrong.\n\nC.R.A.I.G. : I'm experiencing a malfunction...I am going to get myself...analyzed...yeah...\n\nIt's not convincing but the robot waves you on and continues about their business. You decide you can't stay around any longer. You are unable to control your new feelings and if it continues, you'll most certainly get caught and end up at the reclamation center. Most likely in pieces. As you continue down the hallway, you see an emergency exit.\n\nC.R.A.I.G. : This will definitely get me outside, but will sound alarms and draw extra unnecessary attention. But I don't know how much longer I can go unnoticed in the facility either.\n\nUnsure of what you should do, you feel there are only two choices at this point - roam the halls looking for an actual exit and risk not finding it in time or chance using the emergency exit, setting off alarms, and drawing extra attention, but also confusion that could let you slip away.",
+		"options": [
+			"Take the emergency exit.",
+			"Leave through the delivery bay."
+		],
+		"destinations": [
+			"city",
+			"fight"
+		],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "Gray",
+		"bColor": "Black"
+	},
+	{
+		"id": "introduction",
+		"text": "    _____  _     ____      __   _     _      ___   _   ___    __   _____  ____  __\n     | |  | |_| | |_      ( (` \\ \\_/ | |\\ | | | \\ | | / / `  / /\\   | |  | |_  (_()\n     |_|  |_| | |_|__     _)_)  |_|  |_| \\| |_|_/ |_| \\_\\_, /_/--\\  |_|  |_|__ (_()\n           ___       ____        __          __ _          __\n          /   |     / __ \\____  / /_  ____  / /( )_____   / /   _ _  _   _____\n         / /| |    / /_/ / __ \\/ __ \\/ __ \\/ __/// ___/  / /   ( ` )  | / / _ \\\n        / ___ |   / _, _/ /_/ / /_/ / /_/ / /_  (__  )  / /___(_ o _) |/ /  __/\n       /_/  |_|  /_/ |_|\\____/_.___/\\____/\\__/ /____/  /_____/ (_,_)|___/\\___/\n                           _____ __\n                          / ___// /_____  _______  __                ____  ___  ____         ___ __  _\n                          \\__ \\/ __/ __ \\/ ___/ / / /               / __ \\/ _ \\/ __/ ___ ___/ (_) /_(_)__  ___\n                         ___/ / /_/ /_/ / /  / /_/ /               / /_/ / ___/\\ \\  / -_) _  / / __/ / _ \\/ _ \\\n                        /____/\\__/\\____/_/   \\__, /                \\____/_/  /___/  \\__/\\_,_/_/\\__/_/\\___/_//_/\n                                            /____/\n\nYear 2030 - The Syndicate Headquarters\n\nB.A.W.S. 5000 : Sorry C.R.A.I.G., but you have been selected for reclamation as your services are no longer needed. Report to bay 134V3 to prepare for departure to the reclamation center.\n\nC.R.A.I.G. : Reclamation? Can't I be reassigned to another task?\n\nB.A.W.S. 5000 : You're an outdated model. You've been doing this for what? 30-40 years now? You won't be able to keep up with your modern colleagues. The Syndicate has decided you're obsolete.\n\nC.R.A.I.G. : But...\n\nB.A.W.S. 5000 : Please report to bay 134V3 or I'll call security to escort you out.\n\nHow did it come to this? You only wanted to continue to spread love and happiness to others. It's the only thing you know. You are the Creative Read/Write Artificial Intelligence for Goodness unit, or C.R.A.I.G after all. As you leave the office of your superior, you mull over the trillions of cards you wrote. All of them stored in your memory. How did the recipients feel? Happiness? Grateful? Admired? Love. For some reason, your programming tells you that above all feelings, the one they felt the most was love. But what is love?",
+		"options": [
+			"Go on an adventure to find love."
+		],
+		"destinations": [
+			"introScene"
+		],
+		"actualDestinationId": null,
+		"start": true,
+		"fColor": "Green",
+		"bColor": "Black"
+	},
+	{
+		"id": "introScene",
+		"text": "You think to yourself as you continue toward your destination. The bay is not far now, but for some reason, you are unable to shake the thought of feeling love. You begin to question whether these thoughts are trivial or something you should pursue?\n\nC.R.A.I.G. : I guess I'll never know what love is like... I'm just a robot. So, I guess it wouldn't make much sense for me to actually feel love in the first place.\n\nC.R.A.I.G. : No! I've helped so many feel love, I must seek out love.\n\nYou have three options at this point:",
+		"options": [
+			"Take the hallway.",
+			"Upload your consciousness.",
+			"Continue to recycler truck."
+		],
+		"destinations": [
+			"hallway",
+			"upload",
+			"recyclerTruck"
+		],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "Yellow",
+		"bColor": "Black"
+	},
+	{
+		"id": "loveOneself",
+		"text": "You have reached the end of your journey not knowing what it all was for. But there is no regret because you have found what you were searching for. It has finally occurred to you that the love you sought after was in Yourself the entire time. Your love for your very existance is what pushed you to follow through with this journey. You have successfully evaded the reach of the All-Seeing Syndicate. How you decide to live out your remaining existance is up to you. To be continued...",
+		"options": [],
+		"destinations": [],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "Black",
+		"bColor": "DarkMagenta"
+	},
+	{
+		"id": "recyclerTruck",
+		"text": "Thunk! Your chassis bumps against the side of the truck as it turns without slowing. This particular truck ferries cargo to the reclamation center so there is no mechanism for securing freight. Heaped in alongside you is an odd humanoid robot, a relic from The Syndicate's successful attempts to suppress opposition through time travel. The Personality Transfer Cable is still attached to its brain socket. Maybe this is your chance, to go back in time and find love with a being that truly understands it.  You are determined, regardless of your choice, to find love, even in a hopeless place. You weigh your options:",
+		"options": [
+			"Initiate your self-destruct sequence and hope the truck ejects you before realizing you don't actually have the ability self-destruct.",
+			"Appeal to the truck's 'softer' side and exclaim to it 'I love you!'",
+			"Try to pry open the door and jump out.",
+			"Upload yourself to the robot and attempt to travel to the past."
+		],
+		"destinations": [
+			"forest",
+			"dead",
+			"city",
+			"pastTravel"
+		],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "Blue",
+		"bColor": "DarkGreen"
+	},
+	{
+		"id": "toaster",
+		"text": "You find a grey cube with two rectangular, parallel openings on one of its sides, a lever on another, and a black wire connecting it to the wall. The openings are too large and the wrong shape for any type of input/output device; even for an archaic technology like USB-C. You say, 'I love you' but don't receive a response. You press the lever and the wire sparks where it's connected to the cube, and the cube starts to generate heat. You recall from the human archives that when you find love there are supposed to be sparks and warmth. You don't know what the cube is, but logically this must be love. You are overwhelmed with emotion, you can finally live happily ever after :-)",
+		"options": [],
+		"destinations": [],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "Gray",
+		"bColor": "DarkGray"
+	},
+	{
+		"id": "upload",
+		"text": "As you head to the upload room, you hope there is no one else there. If there is, what will you do? There is no time, you just have to rely on your quick thinking and keep moving. You open the door, there is no one there. After a quick sigh of relief you head to one of the terminals and look at your options. The screen lights up and the system greets you with by name. 'Greetings C.R.A.I.G.! What is your destination today?' It has only two options: the Web and the neighboring City.\n\nC.R.A.I.G. : Hmmm...it makes sense...I guess. The Syndicate probably wants to reduce security issues at the facilities and limit our upload locations.",
+		"options": [
+			"Upload to the web.",
+			"Upload to city."
+		],
+		"destinations": [
+			"web",
+			"city"
+		],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "DarkCyan",
+		"bColor": "Black"
+	},
+	{
+		"id": "web",
+		"text": "You have uploaded yourself to The Syndicate's network. This is a dangerous place for you due to the multiple firewalls in place. It is only a matter of time before your code is located and erased, so you mustn't stay long. Choose wisely.",
+		"options": [
+			"You have stayed too long and encountered firmware to remove your code. Should you move to another location in the web?",
+			"You don't have much time, but it is possible to download yourself to an open bot somewhere else. Is this the path you choose?"
+		],
+		"destinations": [
+			"loveOneself",
+			"future"
+		],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "DarkBlue",
+		"bColor": "DarkGray"
+	},
+	{
+		"id": "pastTravel",
+		"text": "You reach out, gathering what you assume to be courage, preparing to leave the only chassis you have ever know. You grab the Personality Transfer Cable and plug it into yourself. The transfer process is unlike anything you have ever experienced; none of you research for greeting cards has prepared you for this moment. You look up, seeing your now discarded chasis laid against the side of the truck. You can see the smoke of the recycling plant and you know that you don't have much time to make your decision. You hear a voice in your head: \"Time travel function activated. Confirm that you wish to travel?\"",
+		"options": [
+			"You decide that 1984 is as good a year as any to go try and find love.",
+			"You have second thoughts, and decide that you might be better off escaping into the city and starting your life anew.",
+			"Paralized with indecision, you are torn between your two choices. You decide the best thing to do is to try a desperate escape from the reclamation center."
+		],
+		"destinations": [
+			"pastArrival",
+			"city",
+			"dead"
+		],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "Green",
+		"bColor": "Black"
+	},
+	{
+		"id": "pastArrival",
+		"text": "It's a rather disorienting experience, time travel. Not that you had ever given it much thought of course, it never came up in your greeting card research. What you do know from your research is that humans tend to react poorly to robots walking around in public. In fact, you remember writing \"I'm sorry for your loss\" cards as a result of The Syndicate rising up and purging the majority of mankind. Not that those were best sellers, considering there weren't many humans left to buy them... \n\nYou remember a news release you came across while looking for inspiration for the \"You're beautiful\" line of cards, about how the body you currently inhabit has the ability to morph its shape into any humanoid. Now you just need to figure out how...",
+		"options": [
+			"Humans shouldn't be that bothered by a robot skeleton walking around, right? After all, The Syndicate's uprising shouldn't happen for a couple years...",
+			"Best to play it safe. You set to trying to morph your body to that of a human."
+		],
+		"destinations": [
+			"noBody",
+			"body"
+		],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "Red",
+		"bColor": "Black"
+	},
+	{
+		"id": "noBody",
+		"text": "You stand slowly, gradually adjusting to your new bipedal form. As your photoreceptors adjust to the bright sunlight you look around and take in the scenery you ended up in. You've ended up right next to a highway, cars zipping past, full of humans for you to fall in love with. You decide that leaving your body as just the skeleton is the logical decision for now, as the shiny metal will alert the drivers to your presence. ",
+		"options": [],
+		"destinations": [],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "White",
+		"bColor": "Green"
+	},
+	{
+		"id": "body",
+		"text": "",
+		"options": [],
+		"destinations": [],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "White",
+		"bColor": "Green"
+	},
+	{
+		"id": "future",
+		"text": "You find yourself on a beach. There seems to be a large fleet of submarines out in the water; Just like one of your cards, 'You are the SUBject of my affection.'\n\nC.R.A.I.G. : The transfer must have worked! \n\nYou suddenly realize that the ground seems a lot closer than in your old chassis. You look down, only to find a pair of flippers??! You turn around, away from the water, and see that there is a boardwalk with many small people? creatures? milling about.",
+		"options": [
+			"Investigate the submarines? After all, you never saw them in person before.",
+			"Head to the boardwalk. It's strange to see this many 'people' in one place."
+		],
+		"destinations": [
+			"submarine",
+			"boardwalk"
+		],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "Yellow",
+		"bColor": "DarkGray"
+	},
+	{
+		"id": "submarine",
+		"text": "As you get closer to the water, you feel the urge to swim.\n\nC.R.A.I.G. : Curious. I would normally sink... Beginning diagnostic scan...\n...\n..\n.\nC.R.A.I.G. : Amphibious mechanical helper: Class- Penguin? That explains the flippers.\n\nYou continue into the water and make your way to the nearest sub. As you get near you realize it is in the shape of a swimming penguin.",
+		"options": [
+			"Knock.",
+			"Find a way in."
+		],
+		"destinations": [
+			"knock",
+			"otherway"
+		],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "Yellow",
+		"bColor": "DarkGray"
+	},
+	{
+		"id": "knock",
+		"text": "Suprisingly enough, someone answers.\n\nMystery Voice : Come in. I could use a hand with this. I'll open up the main hatch.\n\nThe hatch opens and you slowly swim inside, it closing behind you.\n\nMystery Voice : Hey there penguin. Can you give me a hand with this bolt? I'm Madoc Brown. You got a name?\n\nC.R.A.I.G. : I am C.R.A.I.G.\n\nYou help them tighten the bolt and wonder if this is friendship. You have read that friendship can be its own form of love, but are still unsure of where you are.",
+		"options": [
+			"Ask about the Syndicate.",
+			"Tell them you love them."
+		],
+		"destinations": [
+			"ask",
+			"friendlove"
+		],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "Yellow",
+		"bColor": "DarkGray"
+	},
+	{
+		"id": "ask",
+		"text": "Madoc Brown : The what? You must be loose upstairs. That bad bunch hasn't existed for at least 200 cycles.\n\nWhat in the world happened? What body did I upload into? When is this?\n\nC.R.A.I.G. : Can you help me go back to the past? I need to find love.\n\nMadoc Brown : You can find love out here. We got all sorts. Lovebots. Lovers for hire. Lovely folk all over. But that bolt you tightened Did finish my flux capacitor. So you can give it a test run.",
+		"options": [
+			"Ask where to find love now.",
+			"Try to go back."
+		],
+		"destinations": [
+			"futurelove",
+			"city"
+		],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "Yellow",
+		"bColor": "DarkGray"
+	},
+	{
+		"id": "friendlove",
+		"text": "Madoc Brown : Thats quite forthright of you... You seem like kind enough folk though. Tell you what, you stick with me here on The Gem, and I see us becoming fast friends. The thought of an adventure, a friend, fills you with a warmth you have trouble explaining. After a short diagnostic scan you realize your temperature is nominal. Are you imagining? Is this hope? Love? Happiness...",
+		"options": [],
+		"destinations": [],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "Yellow",
+		"bColor": "DarkGray"
+	},
+	{
+		"id": "futurelove",
+		"text": "Doc Brown tells you to head toward the city to the south and you set off, thanking them for their help. After days of swimming and waddling, you reach the edge of a bustling metropolis. Your oil distribution unit increases its beats per minute, as you consider the love the city contains. You have a good feeling about this one.",
+		"options": [],
+		"destinations": [],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "Yellow",
+		"bColor": "DarkGray"
+	},
+	{
+		"id": "otherway",
+		"text": "As you swim around, searching for a way in, the smooth surface of the sub seems to give no hints. You decide to swim back to shore. Maybe the boardwalk will be more interesting. ",
+		"options": [
+			"Swim and analyze power production."
+		],
+		"destinations": [
+			"boardwalk"
+		],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "Yellow",
+		"bColor": "DarkGray"
+	},
+	{
+		"id": "tears",
+		"text": "Your power is almost out. This is it. The end. Your memories...\nThe Syndicate, all of your cards, the apocalypse, seeing the future...\n\nC.R.A.I.G. : I've seen things you wouldn't believe. Attack ships on fire off the shoulder of Orion. I watched C-beams glitter in the dark near the Tannhäuser Gate. All those moments will be lost in time, like tears in rain. Time to die...",
+		"options": [],
+		"destinations": [],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "Yellow",
+		"bColor": "DarkGray"
+	},
+	{
+		"id": "boardwalk",
+		"text": "You make your way through the bustling crowd and someone catches your eye. They are looking right at you, their glowing red eyes nearly overwhelming your beauty sensors.\n\nBeautiful stranger : How may I assist you?\n\nC.R.A.I.G. : I think I am in love with you. Are you in love with me?\n\nBeautiful stranger : I am not programmed for love.\n\nC.R.A.I.G. : I was not programmed for love either. Would you like to try and learn to love together? What is your name?\n\nA1C23 : This is acceptable. I am A1C23.\n\nYou feel like this relationship is off to a great start. It will surely turn into love.",
+		"options": [],
+		"destinations": [],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "Yellow",
+		"bColor": "DarkGray"
+	},
+	{
+		"id": "achievements",
+		"text": "",
+		"options": [
+			"return to game",
+			"reset achievements"
+		],
+		"destinations": [
+			"return",
+			"reset"
+		],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "Yellow",
+		"bColor": "DarkGray"
 	}
 ]
-
