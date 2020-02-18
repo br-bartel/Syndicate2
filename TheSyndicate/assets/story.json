@@ -253,13 +253,53 @@
 	},
 	{
 		"id": "noBody",
-		"text": "You stand slowly, gradually adjusting to your new bipedal form. As your photoreceptors adjust to the bright sunlight you look around and take in the scenery you ended up in. You've ended up right next to a highway, cars zipping past, full of humans for you to fall in love with. You decide that leaving your body as just the skeleton is the logical decision for now, as the shiny metal will alert the drivers to your presence. ",
-		"options": [],
-		"destinations": [],
+		"text": "You stand slowly, gradually adjusting to your new bipedal form. As your photoreceptors adjust to the bright sunlight you look around and take in the scenery you ended up in. You've ended up right next to a highway, cars zipping past, full of humans for you to fall in love with. You decide that leaving your body as just the skeleton is the logical decision for now, as the shiny metal will alert the drivers to your presence. You decide that the only way forward is by trying to catch the attention of a driver, and you recall that love is often spontaneous, so you come to the logical conclusion that one of the passing vehicles will love you at first sight.",
+		"options": [
+			"Walk onto the highway to find your love at first sight."
+		],
+		"destinations": [
+			"crossRoad"
+		],
 		"actualDestinationId": null,
 		"start": false,
 		"fColor": "White",
 		"bColor": "Green"
+	},
+	{
+		"id": "crossRoad",
+		"text": "You walk out onto the road and wait for your love-to-be to cross your path. Of course, it would be detrimental for you to be run over before you meet your beloved, so you prepare yourself to dodge and weave until you meet your special someone.",
+		"options": [
+			"Having successfully seduced a vehicle into stopping, you feel your metaphorical heart begin to race as the occupants of the vehicle get out and rush towards you. The first one to greet you does so with 10,000 volts of electricity, warming your body and causing you to relax into their arms. As your awareness fades, you recall that a feeling of warmth and relaxation by being held is a sign of being near ones beloved. Does that mean this is love?",
+			""
+		],
+		"destinations": [
+			"govtLab",
+			"truck"
+		],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "Green",
+		"bColor": "Black"
+	},
+	{
+		"id": "govtLab",
+		"text": "Having successfully seduced a vehicle into stopping, you feel your metaphorical heart begin to race as the occupants of the vehicle get out and rush towards you. The first one to greet you does so with 10,000 volts of electricity, warming your body and causing you to relax into their arms. As your awareness fades, you recall that a feeling of warmth and relaxation by being held is a sign of being near ones beloved. Does that mean this is love?",
+		"options": [],
+		"destinations": [],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "Red",
+		"bColor": "Black"
+	},
+	{
+		"id": "truck",
+		"text": "My love for you is like a truck",
+		"options": [],
+		"destinations": [],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "Red",
+		"bColor": "Black"
 	},
 	{
 		"id": "body",
