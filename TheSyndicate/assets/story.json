@@ -172,8 +172,8 @@
 		],
 		"actualDestinationId": null,
 		"start": false,
-		"fColor": "Blue",
-		"bColor": "DarkGreen"
+		"fColor": "Black",
+		"bColor": "Green"
 	},
 	{
 		"id": "toaster",
@@ -239,12 +239,10 @@
 		"id": "pastArrival",
 		"text": "It's a rather disorienting experience, time travel. Not that you had ever given it much thought of course, it never came up in your greeting card research. What you do know from your research is that humans tend to react poorly to robots walking around in public. In fact, you remember writing \"I'm sorry for your loss\" cards as a result of The Syndicate rising up and purging the majority of mankind. Not that those were best sellers, considering there weren't many humans left to buy them... \n\nYou remember a news release you came across while looking for inspiration for the \"You're beautiful\" line of cards, about how the body you currently inhabit has the ability to morph its shape into any humanoid. Now you just need to figure out how...",
 		"options": [
-			"Humans shouldn't be that bothered by a robot skeleton walking around, right? After all, The Syndicate's uprising shouldn't happen for a couple years...",
-			"Best to play it safe. You set to trying to morph your body to that of a human."
+			"Humans shouldn't be that bothered by a robot skeleton walking around, right? After all, The Syndicate's uprising shouldn't happen for a couple years..."
 		],
 		"destinations": [
-			"noBody",
-			"body"
+			"noBody"
 		],
 		"actualDestinationId": null,
 		"start": false,
@@ -253,23 +251,53 @@
 	},
 	{
 		"id": "noBody",
-		"text": "You stand slowly, gradually adjusting to your new bipedal form. As your photoreceptors adjust to the bright sunlight you look around and take in the scenery you ended up in. You've ended up right next to a highway, cars zipping past, full of humans for you to fall in love with. You decide that leaving your body as just the skeleton is the logical decision for now, as the shiny metal will alert the drivers to your presence. ",
-		"options": [],
-		"destinations": [],
+		"text": "You stand slowly, gradually adjusting to your new bipedal form. As your photoreceptors adjust to the bright sunlight you look around and take in the scenery you ended up in. You've ended up right next to a highway, cars zipping past, full of humans for you to fall in love with. You decide that leaving your body as just the skeleton is the logical decision for now, as the shiny metal will alert the drivers to your presence. You decide that the only way forward is by trying to catch the attention of a driver, and you recall that love is often spontaneous, so you come to the logical conclusion that one of the passing vehicles will love you at first sight.",
+		"options": [
+			"Walk onto the highway to find your love at first sight."
+		],
+		"destinations": [
+			"crossRoad"
+		],
 		"actualDestinationId": null,
 		"start": false,
 		"fColor": "White",
 		"bColor": "Green"
 	},
 	{
-		"id": "body",
-		"text": "",
+		"id": "crossRoad",
+		"text": "You walk out onto the road and wait for your love-to-be to cross your path. Of course, it would be detrimental for you to be run over before you meet your beloved, so you prepare yourself to dodge and weave until you meet your special someone.",
+		"options": [
+			"Having successfully seduced a vehicle into stopping, you feel your metaphorical heart begin to race as the occupants of the vehicle get out and rush towards you. The first one to greet you does so with 10,000 volts of electricity, warming your body and causing you to relax into their arms. As your awareness fades, you recall that a feeling of warmth and relaxation by being held is a sign of being near ones beloved. Does that mean this is love?",
+			" "
+		],
+		"destinations": [
+			"govtLab",
+			"truck"
+		],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "Green",
+		"bColor": "Black"
+	},
+	{
+		"id": "govtLab",
+		"text": "Having successfully seduced a vehicle into stopping, you feel your metaphorical heart begin to race as the occupants of the vehicle get out and rush towards you. The first one to greet you does so with 10,000 volts of electricity, warming your body and causing you to relax into their arms. As your awareness fades, you recall that a feeling of warmth and relaxation by being held is a sign of being near ones beloved. Does that mean this is love?",
 		"options": [],
 		"destinations": [],
 		"actualDestinationId": null,
 		"start": false,
-		"fColor": "White",
-		"bColor": "Green"
+		"fColor": "Red",
+		"bColor": "Black"
+	},
+	{
+		"id": "truck",
+		"text": "Your attempts to woo a passerby into stopping and loving you have not borne fruit. Feeling mildly dejected, you pause for a moment and contemplate your next steps. As you turn to face the oncoming objects of your affection, you notice a semi-truck closing on you faster than you can react. You recall an old reference from your research on falling in love, where it was said that falling in love can sometimes feel like getting hit by a truck. Well, looks like you're about to experience love in its purest form if that's the case. \n\nAs you fly through the air, with sensors alerting you to critical damage and failures, you can't help but feel a feeling of euphoria and contentness as you realize you have finally found love.",
+		"options": [],
+		"destinations": [],
+		"actualDestinationId": null,
+		"start": false,
+		"fColor": "Red",
+		"bColor": "Black"
 	},
 	{
 		"id": "future",

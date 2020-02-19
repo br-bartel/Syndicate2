@@ -181,6 +181,19 @@ namespace TheSyndicate
 						this.ActualDestinationId = "dead";
 					}
 				}
+                else if (this.ActualDestinationId.Equals("crossRoad"))
+                {
+                    this.Action = new CrossAction();
+                    Action.ExecuteAction();
+                    if (Action.DidPlayerSucceed())
+                    {
+                        this.ActualDestinationId = "govtLab";
+                    }
+                    else
+                    {
+                        this.ActualDestinationId = "truck";
+                    }
+                }
 				else if (this.Id.Equals("upload") || this.Id.Equals("otherway") ||
 					(this.Id.Equals("recyclerTruck") && this.ActualDestinationId.Equals("city")))
 				{
