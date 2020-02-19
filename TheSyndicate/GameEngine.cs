@@ -167,7 +167,7 @@ namespace TheSyndicate
                 }
                 else
                 {
-                    text += ach.Hint + "\n\n";
+                    text += "___________________              : " + ach.Hint + "\n\n";
                 }
             }
 
