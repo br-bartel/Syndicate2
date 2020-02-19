@@ -88,7 +88,9 @@ namespace TheSyndicate
             sceneTextBox.SetBoxPosition(ConsoleWindow.Width - (ConsoleWindow.Width / 4), ConsoleWindow.Height - 4);
             if (this.Id != "achievements")
 			{
+				Console.SetCursorPosition(ConsoleWindow.Width - 30, ConsoleWindow.Height - 5);
 				Console.WriteLine($"Enter 0 to save and quit.");
+				Console.SetCursorPosition(ConsoleWindow.Width - 30, ConsoleWindow.Height - 4);
 				Console.WriteLine($"Enter 9 to see achievements.");
 			}
         }
