@@ -68,8 +68,8 @@
 		],
 		"actualDestinationId": null,
 		"start": false,
-		"fColor": "DarkGray",
-		"bColor": "Green"
+		"fColor": "Black",
+		"bColor": "DarkGreen"
 	},
 	{
 		"id": "lake",
@@ -84,7 +84,7 @@
 		],
 		"actualDestinationId": null,
 		"start": false,
-		"fColor": "DarkGray",
+		"fColor": "Black",
 		"bColor": "Cyan"
 	},
 	{
@@ -172,8 +172,8 @@
 		],
 		"actualDestinationId": null,
 		"start": false,
-		"fColor": "Black",
-		"bColor": "Green"
+		"fColor": "White",
+		"bColor": "DarkBlue"
 	},
 	{
 		"id": "toaster",
@@ -260,8 +260,8 @@
 		],
 		"actualDestinationId": null,
 		"start": false,
-		"fColor": "White",
-		"bColor": "Green"
+		"fColor": "Gray",
+		"bColor": "DarkBlue"
 	},
 	{
 		"id": "crossRoad",
@@ -312,8 +312,8 @@
 		],
 		"actualDestinationId": null,
 		"start": false,
-		"fColor": "Yellow",
-		"bColor": "DarkGray"
+		"fColor": "DarkBlue",
+		"bColor": "DarkYellow"
 	},
 	{
 		"id": "submarine",
@@ -328,8 +328,8 @@
 		],
 		"actualDestinationId": null,
 		"start": false,
-		"fColor": "Yellow",
-		"bColor": "DarkGray"
+		"fColor": "DarkYellow",
+		"bColor": "DarkBlue"
 	},
 	{
 		"id": "knock",
@@ -344,8 +344,8 @@
 		],
 		"actualDestinationId": null,
 		"start": false,
-		"fColor": "Yellow",
-		"bColor": "DarkGray"
+		"fColor": "DarkYellow",
+		"bColor": "DarkBlue"
 	},
 	{
 		"id": "ask",
@@ -360,8 +360,8 @@
 		],
 		"actualDestinationId": null,
 		"start": false,
-		"fColor": "Yellow",
-		"bColor": "DarkGray"
+		"fColor": "DarkYellow",
+		"bColor": "DarkBlue"
 	},
 	{
 		"id": "friendlove",
@@ -370,8 +370,8 @@
 		"destinations": [],
 		"actualDestinationId": null,
 		"start": false,
-		"fColor": "Yellow",
-		"bColor": "DarkGray"
+		"fColor": "DarkYellow",
+		"bColor": "DarkBlue"
 	},
 	{
 		"id": "futurelove",
@@ -394,8 +394,8 @@
 		],
 		"actualDestinationId": null,
 		"start": false,
-		"fColor": "Yellow",
-		"bColor": "DarkGray"
+		"fColor": "DarkYellow",
+		"bColor": "DarkBlue"
 	},
 	{
 		"id": "tears",
@@ -404,8 +404,8 @@
 		"destinations": [],
 		"actualDestinationId": null,
 		"start": false,
-		"fColor": "Yellow",
-		"bColor": "DarkGray"
+		"fColor": "DarkYellow",
+		"bColor": "DarkBlue"
 	},
 	{
 		"id": "boardwalk",
@@ -414,8 +414,8 @@
 		"destinations": [],
 		"actualDestinationId": null,
 		"start": false,
-		"fColor": "Yellow",
-		"bColor": "DarkGray"
+		"fColor": "DarkBlue",
+		"bColor": "DarkYellow"
 	},
 	{
 		"id": "achievements",
@@ -430,7 +430,9 @@
 		],
 		"actualDestinationId": null,
 		"start": false,
-		"fColor": "Yellow",
-		"bColor": "DarkGray"
+		"fColor": "Blue",
+		"bColor": "Black"
 	}
-]
+]
+
+
