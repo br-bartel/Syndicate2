@@ -14,11 +14,16 @@ public class UnitTest1
             "You don't have much time, but it is possible to download yourself to an open bot somewhere else. Is this the path you choose?"
             };
             string[] arrDestinations = { "loveOneself", "city" };
+            string BackgroundColor = "DarkGray";
+            string ForegroundColor = "DarkBlue";
             Scene testScene = new Scene("web",
                                         "You have uploaded yourself to The Syndicate's network. This is a dangerous place for you due to the multiple firewalls in place. It is only a matter of time before your code is located and erased, so you mustn't stay long. Choose wisely.",
                                         arrText,
                                         arrDestinations,
-                                        false);
+                                        false,
+                                        ForegroundColor,
+                                        BackgroundColor
+                                        );
 
             Assert.AreEqual("web", testScene.Id);
             Assert.AreEqual(2, testScene.Destinations.Length);
@@ -54,11 +59,16 @@ public class UnitTest1
             "You don't have much time, but it is possible to download yourself to an open bot somewhere else. Is this the path you choose?"
             };
             string[] arrDestinations = { "loveOneself", "city" };
+            string BackgroundColor = "DarkGray";
+            string ForegroundColor = "DarkBlue";
             Scene testScene = new Scene("web",
                                         "You have uploaded yourself to The Syndicate's network. This is a dangerous place for you due to the multiple firewalls in place. It is only a matter of time before your code is located and erased, so you mustn't stay long. Choose wisely.",
                                         arrText,
                                         arrDestinations,
-                                        false);
+                                        false,
+                                        ForegroundColor,
+                                        BackgroundColor
+                                       );
 
             Assert.IsTrue(testScene.IsValidInput(0));
             Assert.IsTrue(testScene.IsValidInput(1));
