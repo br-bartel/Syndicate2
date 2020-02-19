@@ -239,12 +239,10 @@
 		"id": "pastArrival",
 		"text": "It's a rather disorienting experience, time travel. Not that you had ever given it much thought of course, it never came up in your greeting card research. What you do know from your research is that humans tend to react poorly to robots walking around in public. In fact, you remember writing \"I'm sorry for your loss\" cards as a result of The Syndicate rising up and purging the majority of mankind. Not that those were best sellers, considering there weren't many humans left to buy them... \n\nYou remember a news release you came across while looking for inspiration for the \"You're beautiful\" line of cards, about how the body you currently inhabit has the ability to morph its shape into any humanoid. Now you just need to figure out how...",
 		"options": [
-			"Humans shouldn't be that bothered by a robot skeleton walking around, right? After all, The Syndicate's uprising shouldn't happen for a couple years...",
-			"Best to play it safe. You set to trying to morph your body to that of a human."
+			"Humans shouldn't be that bothered by a robot skeleton walking around, right? After all, The Syndicate's uprising shouldn't happen for a couple years..."
 		],
 		"destinations": [
-			"noBody",
-			"body"
+			"noBody"
 		],
 		"actualDestinationId": null,
 		"start": false,
