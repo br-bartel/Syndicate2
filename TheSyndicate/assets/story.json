@@ -172,8 +172,8 @@
 		],
 		"actualDestinationId": null,
 		"start": false,
-		"fColor": "Blue",
-		"bColor": "DarkGreen"
+		"fColor": "Black",
+		"bColor": "Green"
 	},
 	{
 		"id": "toaster",
@@ -270,7 +270,7 @@
 		"text": "You walk out onto the road and wait for your love-to-be to cross your path. Of course, it would be detrimental for you to be run over before you meet your beloved, so you prepare yourself to dodge and weave until you meet your special someone.",
 		"options": [
 			"Having successfully seduced a vehicle into stopping, you feel your metaphorical heart begin to race as the occupants of the vehicle get out and rush towards you. The first one to greet you does so with 10,000 volts of electricity, warming your body and causing you to relax into their arms. As your awareness fades, you recall that a feeling of warmth and relaxation by being held is a sign of being near ones beloved. Does that mean this is love?",
-			""
+			" "
 		],
 		"destinations": [
 			"govtLab",
@@ -293,23 +293,13 @@
 	},
 	{
 		"id": "truck",
-		"text": "My love for you is like a truck",
+		"text": "Your attempts to woo a passerby into stopping and loving you have not borne fruit. Feeling mildly dejected, you pause for a moment and contemplate your next steps. As you turn to face the oncoming objects of your affection, you notice a semi-truck closing on you faster than you can react. You recall an old reference from your research on falling in love, where it was said that falling in love can sometimes feel like getting hit by a truck. Well, looks like you're about to experience love in its purest form if that's the case. \n\nAs you fly through the air, with sensors alerting you to critical damage and failures, you can't help but feel a feeling of euphoria and contentness as you realize you have finally found love.",
 		"options": [],
 		"destinations": [],
 		"actualDestinationId": null,
 		"start": false,
 		"fColor": "Red",
 		"bColor": "Black"
-	},
-	{
-		"id": "body",
-		"text": "",
-		"options": [],
-		"destinations": [],
-		"actualDestinationId": null,
-		"start": false,
-		"fColor": "White",
-		"bColor": "Green"
 	},
 	{
 		"id": "future",

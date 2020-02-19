@@ -30,16 +30,10 @@
 		"hint": "See what is behind door number two"
 	},
 	{
-		"id": "noBody",
+		"id": "govtLab",
 		"state": "false",
 		"completed": "Where is Sarah Connor?",
 		"hint": "Embrace your inner T800"
-	},
-	{
-		"id": "body",
-		"state": "false",
-		"completed": "",
-		"hint": "n/a"
 	},
 	{
 		"id": "friendlove",
@@ -64,5 +58,11 @@
 		"state": "false",
 		"completed": "Chatbot love",
 		"hint": "Love another robot"
+	},
+	{
+		"id": "truck",
+		"state": "false",
+		"completed": "My love for you is like a truck",
+		"hint": "Fly through the air with the greatest of ease"
 	}
 ]
